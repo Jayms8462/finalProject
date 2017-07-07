@@ -53,7 +53,7 @@ Driver -
   uniform at the end of project so it is presentable and complete for turn in
 
 Team Lead -
-  Final review of the code and other items. Respnsible for putting together all the groups tasks and makin sure they get
+  Final review of the code and other items. Responsible for putting together all the groups tasks and makin sure they get
   completed in a timely manor so the project gets turned in on time and complete. Assigns tasks to the groupo members
   based on roles or depending on how the objective needs to be completed. Main POC for problems  within the group
   and is the problem resolution person. Lastly is responsible for launching the page live on the net with a domain name
@@ -62,6 +62,10 @@ Team Lead -
 Asst Team Lead / Worker -
   Responsible for assisting the team lead to make sure the tasks get completed in a timely manor and is assisting the
   team lead in getting the data put into the site as needed.
+
+Researcher and Driver will be working together. Joel is good at finding information as needed and doing research while Thoa is an organized individual. These two are the first line that look at the bulk of the code before it is submitted to master. Then Dalton and I are the second individuals that look at the code to finalize before it is merged with master.
+
+Team Lead and Assist Team Lead will work together to assign tasks and make sure that the tasks get done at the time desired and assisting with the tasks as needed and re assigning them to the appropriate people. We are the second line of defense in the code before it is submitted to master.
 
   Requirements
     Roadmap
