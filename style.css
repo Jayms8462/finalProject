@@ -25,6 +25,8 @@ body {
   text-decoration: none;
   color:white;
   margin: 0px 20px 0px 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
 }
 .mainBody {
   width: 960px;
