@@ -8,75 +8,21 @@ Fonts - All
   Secondary Selection
   Minor Selection
     Browser Default for Selections
-Dev Items
-  Chibi toon Selection
-  Fav Food
-  Fav Place
-  Write Up
-  Photo
-Images - Joel
-  Touch Up
-  Sizing
-  Replacements
 
 wireframe
-Navbar
-  Creation
-  Placement
-  Functionality Test
-Annimation
-  Transistion of photos
-Data
-  Grabbing Data
-    Photos
-    Hours
-    Price Range
-    Items
-    Address
-    Link
-  inputting Data on Home
-  Inputting on Game
-    Photos
-    Questions
-    Finish Page
-  Inputting About Me Info
+Home
+  Missions Statement
+  Instructions for Game
+  Testimonies (2-3)
 Game
-  Functionality - Joel
-Finish Data Pop-Up
-  Functionality - Joel
-About Me
-  Functionality - James
-Final Check
-  Full Functionality Check - Thoa
-  Uniformity - Thoa
-  Data Correction - Thoa
-Live Site
-  Get Domain - James
-  Set up Domain - James
-  Push to Domain - James
-  Check if live - Dalton
-  Functionality - Dalton
-
-
-
-Per Page
-
-Home / Index - Dalton
-  Mission Statement
-    -Write Up of Site Mission Statement (What we are accomplishing)
-  Instructions
-    -How to play the game
-  Testimonies
-    -Generate Testimonies for the Front Page, IE for out Site
-Game
-  Question - Thoa / Jeol
+  Question
     -Display Question
-  Pictures - Thoa / Jeol
+  Pictures
     -Display Pictures for user selection
   Animations
-    -Transition of pictures on selection  - Thoa / Jeol
-    -Dev Character Animation(stretch) - Thoa / Jeol
-  Finish Page on completion of Questions - Dalton
+    -Transition of pictures on selection
+    -Dev Character Animation(stretch)
+  Finish Page on completion of Questions
     -Display
       -Name
       -Location
@@ -85,18 +31,36 @@ Game
       -Hours
       -Bus Stop Location and Route Number
       -Suggestions
-About Me
-  Self Write Up - Dalton / Joel / Thoa / James
-  Animation Character - Dalton / Joel / Thoa / James
-  Photo - Dalton / Joel / Thoa / James
-  Fav Food Item - Dalton / Joel / Thoa / James
+Navbar
+  Creation
+  Placement
+  Functionality Test
+Annimation
+  Transistion of photos (onclick)
+  Hover of Photos with persons animation (onhover)
+  Home (pa)
+Data (into Google Docs)
+  Grabbing Data
+    Name
+    Photos
+    Hours
+    Price Range
+    Items
+    Address
+    Link
+About Me Info
+    -Self Write Up
+    -Anaimation Character (selection)
+    -Photo of Self
+    -Fav Dish
+    -Fav Food
 Trip Planner (Stretch)
-  Closest Drop Of - James
-    Fare estimate - James
-  Google Api - James
-    Directions - James
-    Cab fare Estimate - James
-  Buisiest Times - Dalton
-  Items Needed Per Location - Dalton
-  Other Activites in the Area - James
-  Yelp Reviews - James
+      Closest Drop Of
+        Fare estimate
+      Google Api
+        Directions
+        Cab fare Estimate
+      Buisiest Times
+      Items Needed Per Location
+      Other Activites in the Area
+      Yelp Reviews
