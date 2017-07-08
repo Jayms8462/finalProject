@@ -19,3 +19,4 @@ var roti = new Restaurant ('asian', 'Roti Indian Cuisine', '$$', '530 Queen Anne
 var harbor = new Restaurant ('asian', 'Harbor City Restaurant', '$$', '707 S King St., Seattle, WA 98104', '(206) 621-2228', '8:30AM to 11:00PM', '');
 var sevenBeef = new Restaurant ('asian', 'Seven Beef', '$$$', '1305 E Jefferson St., Seattle WA 98122', '(206) 328-7090', '5:00PM to 10:00PM', 'sevenbeef.com', '');
 var shiros = new Restaurant ('asian', 'Shiro\'s', '$$$', '2401 2nd Ave, Seattle WA 98121', '(206) 443-9844', '5:30PM to 10:30PM', 'https://shiros.com/', ''); 
+
