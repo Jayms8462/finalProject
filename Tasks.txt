@@ -1,0 +1,102 @@
+tasks
+Color - All
+  Prime
+  Secondary
+  Minor
+Fonts - All
+  Font Selection
+  Secondary Selection
+  Minor Selection
+    Browser Default for Selections
+Dev Items
+  Chibi toon Selection
+  Fav Food
+  Fav Place
+  Write Up
+  Photo
+Images - Joel
+  Touch Up
+  Sizing
+  Replacements
+
+wireframe
+Navbar
+  Creation
+  Placement
+  Functionality Test
+Annimation
+  Transistion of photos
+Data
+  Grabbing Data
+    Photos
+    Hours
+    Price Range
+    Items
+    Address
+    Link
+  inputting Data on Home
+  Inputting on Game
+    Photos
+    Questions
+    Finish Page
+  Inputting About Me Info
+Game
+  Functionality - Joel
+Finish Data Pop-Up
+  Functionality - Joel
+About Me
+  Functionality - James
+Final Check
+  Full Functionality Check - Thoa
+  Uniformity - Thoa
+  Data Correction - Thoa
+Live Site
+  Get Domain - James
+  Set up Domain - James
+  Push to Domain - James
+  Check if live - Dalton
+  Functionality - Dalton
+
+
+
+Per Page
+
+Home / Index - Dalton
+  Mission Statement
+    -Write Up of Site Mission Statement (What we are accomplishing)
+  Instructions
+    -How to play the game
+  Testimonies
+    -Generate Testimonies for the Front Page, IE for out Site
+Game
+  Question - Thoa / Jeol
+    -Display Question
+  Pictures - Thoa / Jeol
+    -Display Pictures for user selection
+  Animations
+    -Transition of pictures on selection  - Thoa / Jeol
+    -Dev Character Animation(stretch) - Thoa / Jeol
+  Finish Page on completion of Questions - Dalton
+    -Display
+      -Name
+      -Location
+      -Rating
+      -Price Range
+      -Hours
+      -Bus Stop Location and Route Number
+      -Suggestions
+About Me
+  Self Write Up - Dalton / Joel / Thoa / James
+  Animation Character - Dalton / Joel / Thoa / James
+  Photo - Dalton / Joel / Thoa / James
+  Fav Food Item - Dalton / Joel / Thoa / James
+Trip Planner (Stretch)
+  Closest Drop Of - James
+    Fare estimate - James
+  Google Api - James
+    Directions - James
+    Cab fare Estimate - James
+  Buisiest Times - Dalton
+  Items Needed Per Location - Dalton
+  Other Activites in the Area - James
+  Yelp Reviews - James
