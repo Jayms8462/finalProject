@@ -16,6 +16,12 @@
   top: 120px;
   display: block;
   background-color: #2B4C6F;
+  text-align: center;
+}
+.navbar a {
+  text-decoration: none;
+  color:white;
+  margin: 0px 20px 0px 20px;
 }
 .mainBody {
   width: 960px;
