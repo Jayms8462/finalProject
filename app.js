@@ -30,3 +30,4 @@ var elLegend = new Restaurant ('mexican', 'El Legendario Mexican Restaurant', '$
 var laAnt = new Restaurant ('mexican', 'La Antigua Casa Maria', '$$$', '1100 N 115th St Ste 101 Seattle, WA 98133 b/t N Stone Ave & N Aurora Ave Haller Lake', '(206) 420-1158', '11:00AM to 10:00PM', 'laantiguacasamaria.com');
 var zocalo = new Restaurant ('mexican', 'Zocálo', '$$$', '224 Occidental Ave S Seattle, WA 98104 b/t Main St & Washington St  Pioneer Square', '(206) 623-0550', '11:00AM to 10:00PM', 'zocaloseattle.com');
 var taqueria = new Restaurant ('mexican', 'Taqueria Cantina', '$$$', '2630 1st Ave Seattle, WA 98121 b/t Cedar St & Vine St Belltown','(206) 995-8588', '11:00AM to 11:00PM', 'taqueriacantina.com');
+//Italian Restaurants
