@@ -1,21 +1,24 @@
+body {
+  background-color: #5D9CEC;
+}
 .topBar {
   width: 100%;
   height: 120px;
   position: absolute;
   left: 0px;
   top: 0px;
-  background-color: #041D37;
+  background-color: #4A89DC;
   margin: 0 0 0 0;
   overflow: hidden;
 }
 .navbar {
   width: 100%;
-  height: 40px;
+  height: 50px;
   position: absolute;
   left: 0px;
   top: 120px;
   display: block;
-  background-color: #2B4C6F;
+  background-color: #5D9CEC;
   text-align: center;
 }
 .navbar a {
@@ -29,21 +32,24 @@
   margin-top: 160px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffffe6;
-  border: 1px solid black;
+  background-color: #4A89DC;
+  border: 3px solid black;
+}
+.mainBody img {
+  background-color:#5D9CEC;
 }
 .footBar {
   width: 100%;
   height: 40px;
   position: relative;
   display: block;
-  background-color: #2B4C6F;
+  background-color: #5D9CEC;
 }
 .footCopyright {
   width: 100%;
   height: 120px;
   position: relative;
-  background-color: #041D37;
+  background-color: #4A89DC;
   margin: 0 0 0 0;
   overflow: hidden;
 }
@@ -57,7 +63,7 @@
   width: 30%;
   height: 300px;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 #img2 {
   float: left;
@@ -65,12 +71,12 @@
   height: 300px;
   margin-left: 5%;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 #img3 {
   float: right;
   width: 30%;
   height: 300px;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
