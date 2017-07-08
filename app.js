@@ -31,3 +31,12 @@ var laAnt = new Restaurant ('mexican', 'La Antigua Casa Maria', '$$$', '1100 N 1
 var zocalo = new Restaurant ('mexican', 'Zocálo', '$$$', '224 Occidental Ave S Seattle, WA 98104 b/t Main St & Washington St  Pioneer Square', '(206) 623-0550', '11:00AM to 10:00PM', 'zocaloseattle.com');
 var taqueria = new Restaurant ('mexican', 'Taqueria Cantina', '$$$', '2630 1st Ave Seattle, WA 98121 b/t Cedar St & Vine St Belltown','(206) 995-8588', '11:00AM to 11:00PM', 'taqueriacantina.com');
 //Italian Restaurants
+var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt Way NE, Seattle, WA 98105','(206)466-2380','4:00PM-10:00PM');
+var bizzarro = new Restaurant ('Italian','Bizzarro Italian Cafe','$','1307 N 46th St, Seattle, WA 98103','(206) 632-7277','5:00PM-10:00PM');
+var loPriore = new Restaurant ('Italian','LoPriore Brothers Pasta Bar','$','1530 Post Alley, Seattle, WA 98101','(206) 621-7545','10:00AM-5:00PM')
+var salvatoreRistorante = new Restaurant ('Italian','Salvatore Ristorante Italiano','$$','6100 Roosevelt Way NE, Seattle, WA 98105','(206)527-9301','5:00PM-10:00PM');
+var mammaMelina = new Restaurant ('Italian','Mamma Melina Ristorante & Pizzeria','$$','5101 25th Ave NE, Seattle, WA 98105','(206) 632-2271','11:00AM-11:00PM');
+var buca = new Restaurant ('Italian','Buca di Beppo','$$','701 9th Ave N, Seattle, WA 98109','(206) 244-2288','11:00AM-11:00PM');
+var tavolata = new Restaurant ('Italian','Tavolata','$$$','2323 2nd Ave, Seattle, WA 98121','(206) 838-8008','5:00PM-11:00PM');
+var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt Way NE, Seattle, WA 98105','(206)466-2380','4:00PM-10:00PM');
+var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattle, WA 98122','(206) 251-7673','5:00PM-11:00PM');
