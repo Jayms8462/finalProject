@@ -40,3 +40,24 @@ var buca = new Restaurant ('Italian','Buca di Beppo','$$','701 9th Ave N, Seattl
 var tavolata = new Restaurant ('Italian','Tavolata','$$$','2323 2nd Ave, Seattle, WA 98121','(206) 838-8008','5:00PM-11:00PM');
 var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt Way NE, Seattle, WA 98105','(206)466-2380','4:00PM-10:00PM');
 var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattle, WA 98122','(206) 251-7673','5:00PM-11:00PM');
+
+function typeOfFood() {
+
+}
+
+function priceRange() {
+
+}
+
+function showRestaurants(){
+
+}
+
+var clickEl = document.getElementById('first-image');
+clickEl.addEventListener('click', addEvent);
+
+var clickEl2 = document.getElementById('second-image');
+clickEl2.addEventListener('click', addEvent);
+
+var clickEl3 = document.getElementById('third-image');
+clickEl3.addEventListener('click', addEvent);
