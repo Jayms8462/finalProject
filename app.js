@@ -43,6 +43,7 @@ var tavolata = new Restaurant ('Italian','Tavolata','$$$','2323 2nd Ave, Seattle
 var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt Way NE, Seattle, WA 98105','(206)466-2380','4:00PM-10:00PM');
 var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattle, WA 98122','(206) 251-7673','5:00PM-11:00PM');
 
+
 ///'./images/mexican/Zocalo.jpg'
 var restaurants;
 
@@ -85,3 +86,4 @@ img3.src =
 displayDishes();
 */
 
+>>>>>>> fc6bafa9e487c9515ef73a16cdabcf76a58a2bd9
