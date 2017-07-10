@@ -10,6 +10,11 @@ body {
   background-color: #4A89DC;
   margin: 0 0 0 0;
   overflow: hidden;
+  text-align: center;
+}
+.topBar i {
+  color:white;
+  margin-top: 40px;
 }
 h1{
   font-family: 'Quicksand', sans-serif;
@@ -40,6 +45,7 @@ h3{
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
 }
+
 .mainBody {
   width: auto;
   height: auto;
@@ -143,4 +149,11 @@ h3{
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+//AboutUs CSS
+.mainBody section {
+  background-color:white;
+  height:300px;
+  width: 100%;
 }
