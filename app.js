@@ -1,4 +1,5 @@
 'use strict';
+
 function Restaurant (category, name, priceRange, address, phoneNumber, hours, link, imagePath) {
   this.category = category;
   this.name = name;
@@ -9,6 +10,7 @@ function Restaurant (category, name, priceRange, address, phoneNumber, hours, li
   this.link = link;
   this.imagePath = imagePath;
 }
+
 
 //Asian Restaurants
 var thanhSonTofu = new Restaurant ('asian', 'Thanh Son Tofu', '$', '1248 S King St, Seattle, WA 98144', '(206) 320-1316', '8AM to 6PM', '', '');
@@ -41,23 +43,47 @@ var tavolata = new Restaurant ('Italian','Tavolata','$$$','2323 2nd Ave, Seattle
 var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt Way NE, Seattle, WA 98105','(206)466-2380','4:00PM-10:00PM');
 var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattle, WA 98122','(206) 251-7673','5:00PM-11:00PM');
 
-function typeOfFood() {
 
+///'./images/mexican/Zocalo.jpg'
+var restaurants;
+
+restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros];
+
+function getRestaurant(category, priceRange){
+  var result = [];
+
+  for(var i = 0; i < restaurants.length; i++){
+    if ((restaurants[i].category === category) && (restaurants[i].priceRange === priceRange)){
+      result.push(restaurants[i]);
+    }
+  }
+  console.log(result);
+  return result;
 }
 
-function priceRange() {
+function displayRecommendedRestaurants(){
+///test function getRestaurant
+var recommendedRestaurant = getRestaurant('asian', '$$$');
+console.log(recommendedRestaurant);
 
+var img1 = document.getElementById('img1');
+var img2 = document.getElementById('img2');
+var img3 = document.getElementById('img3');
+
+img1.src = recommendedRestaurant[0].imagePath;
+img2.src = recommendedRestaurant[1].imagePath;
+img3.src = recommendedRestaurant[2].imagePath;
 }
 
-function showRestaurants(){
+displayRecommendedRestaurants();
 
-}
+/*
+function displayDishes
+img1.src = ./images/asian/asianDishes.jpg
+img2.src =
+img3.src =
 
-var clickEl = document.getElementById('first-image');
-clickEl.addEventListener('click', addEvent);
+displayDishes();
+*/
 
-var clickEl2 = document.getElementById('second-image');
-clickEl2.addEventListener('click', addEvent);
-
-var clickEl3 = document.getElementById('third-image');
-clickEl3.addEventListener('click', addEvent);
+>>>>>>> fc6bafa9e487c9515ef73a16cdabcf76a58a2bd9
