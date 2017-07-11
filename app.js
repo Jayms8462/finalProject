@@ -11,17 +11,23 @@ function Restaurant (category, name, priceRange, address, phoneNumber, hours, li
   this.imagePath = imagePath;
 }
 
+<<<<<<< HEAD
+=======
 
 //Asian Restaurants
+>>>>>>> fc6bafa9e487c9515ef73a16cdabcf76a58a2bd9
 var thanhSonTofu = new Restaurant ('asian', 'Thanh Son Tofu', '$', '1248 S King St, Seattle, WA 98144', '(206) 320-1316', '8AM to 6PM', '', '');
 var aPieceOfCake = new Restaurant ('asian', 'A Piece Of Cake', '$', '2401 2nd Ave, Seattle, WA 98121', '(206) 623-8284', '9AM to 9PM', 'apieceofcakeseattle.com', '');
 var moonLight = new Restaurant ('asian', 'Moon Light Cafe', '$', '1919 S Jackson St, Seattle, WA 98144', '(206) 322-3378', '11:00AM to 9:30PM', '', '');
 var bambooGarden = new Restaurant ('asian', 'Bamboo Garden Vegetarian', '$$', '364 Roy Street, Seattle, WA 98109', '(206) 282-6616', '11AM to 10PM', 'http://www.bamboo-garden.co/', '');
 var wedgwood = new Restaurant ('asian', 'Wedgwood Vegetarian Thai', '$$', '420 Broadway E., Seattle, WA 98102', '(206) 724-0655', '12:00PM to 9:30PM', 'http://wedgwoodii.com/', '');
 var roti = new Restaurant ('asian', 'Roti Indian Cuisine', '$$', '530 Queen Anne Ave N, Seattle, WA 98109', '(206) 216-7684', '11:30AM to 9:45PM', 'http://rotirestaurantseattle.com/', '');
-var harbor = new Restaurant ('asian', 'Harbor City Restaurant', '$$', '707 S King St., Seattle, WA 98104', '(206) 621-2228', '8:30AM to 11:00PM', '');
+var harbor = new Restaurant ('asian', 'Harbor City Restaurant', '$$$', '707 S King St., Seattle, WA 98104', '(206) 621-2228', '8:30AM to 11:00PM', '', '');
 var sevenBeef = new Restaurant ('asian', 'Seven Beef', '$$$', '1305 E Jefferson St., Seattle WA 98122', '(206) 328-7090', '5:00PM to 10:00PM', 'sevenbeef.com', '');
 var shiros = new Restaurant ('asian', 'Shiro\'s', '$$$', '2401 2nd Ave, Seattle WA 98121', '(206) 443-9844', '5:30PM to 10:30PM', 'https://shiros.com/', '');
+<<<<<<< HEAD
+
+=======
 //Mexican Restaurants
 var tacosC = new Restaurant ('mexican', 'Tacos Chukis', '$', '219 Broadway E Seattle, WA 98102', '(206) 328-4447', '11:00AM to 10:00pm', 'https://www.yelp.com/biz/tacos-chukis-seattle?osq=Mexican+Food');
 var elCam = new Restaurant ('mexican', 'El Camión', '$', '6416 15th Ave NW Seattle, WA 98107 at 64th St Ballard', '(206) 784-5411', '9:30AM to 10:00pm', 'https://www.yelp.com/biz/el-cami%C3%B3n-seattle-7?osq=Mexican+Food');
@@ -44,18 +50,34 @@ var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt W
 var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattle, WA 98122','(206) 251-7673','5:00PM-11:00PM');
 
 ///'./images/mexican/Zocalo.jpg'
+>>>>>>> fc6bafa9e487c9515ef73a16cdabcf76a58a2bd9
 var restaurants;
 
 restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros];
 
+<<<<<<< HEAD
+function getRestaurant (category, priceRange) {
+  var result = [];
+
+  for (var i = 0; i < restaurants.length; i++) {
+=======
 function getRestaurant(category, priceRange){
   var result = [];
 
   for(var i = 0; i < restaurants.length; i++){
+>>>>>>> fc6bafa9e487c9515ef73a16cdabcf76a58a2bd9
     if ((restaurants[i].category === category) && (restaurants[i].priceRange === priceRange)){
       result.push(restaurants[i]);
     }
   }
+<<<<<<< HEAD
+  return result;
+}
+
+///test getRestaurant function
+var recommendedRestaurant = getRestaurant('asian', '$$$');
+console.log (recommendedRestaurant);
+=======
   console.log(result);
   return result;
 }
@@ -85,3 +107,4 @@ img3.src =
 displayDishes();
 */
 
+>>>>>>> fc6bafa9e487c9515ef73a16cdabcf76a58a2bd9
