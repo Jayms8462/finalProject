@@ -64,6 +64,7 @@ function getRestaurant(category, priceRange){
 
 
 function displayRecommendedRestaurants(){
+
 ///test function getRestaurant
 var recommendedRestaurant = getRestaurant('asian', '$$$');
 console.log(recommendedRestaurant);
@@ -78,11 +79,3 @@ img3.src = recommendedRestaurant[2].imagePath;
 }
 
 displayRecommendedRestaurants();
-
-
-function displayDishes() {
-  img1.src = ./images/asian/asianDishes.jpg
-  img2.src =
-  img3.src =
-}
-displayDishes();
