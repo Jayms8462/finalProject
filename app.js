@@ -44,7 +44,7 @@ var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt W
 var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattle, WA 98122','(206) 251-7673','5:00PM-11:00PM');
 
 
-///'./images/mexican/Zocalo.jpg'
+
 var restaurants;
 
 restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros];
@@ -85,5 +85,3 @@ img3.src =
 
 displayDishes();
 */
-
->>>>>>> fc6bafa9e487c9515ef73a16cdabcf76a58a2bd9
