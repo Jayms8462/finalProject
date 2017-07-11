@@ -152,8 +152,7 @@ h3{
 }
 
 //AboutUs CSS
-.mainBody section {
-  background-color:white;
-  height:300px;
-  width: 100%;
+.block {
+  height: 300px;
+  width:100%;
 }
