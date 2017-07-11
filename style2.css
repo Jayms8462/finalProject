@@ -53,6 +53,8 @@ h3{
   color:white;
   font-size: 16px;
   list-style:none;
+  border-radius: 25px;
+  box-shadow:0 0 15px #040303;
 }
 .mainBody li {
   list-style: none;
@@ -88,6 +90,7 @@ h3{
   height: 300px;
   border-radius: 20px;
   border: 1px solid black;
+  border-radius: 25px;
 }
 #img2 {
   float: left;
