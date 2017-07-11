@@ -11,8 +11,6 @@ function Restaurant (category, name, priceRange, address, phoneNumber, hours, li
   this.imagePath = imagePath;
 }
 
-
-
 //Asian Restaurants
 var thanhSonTofu = new Restaurant ('asian', 'Thanh Son Tofu', '$', '1248 S King St, Seattle, WA 98144', '(206) 320-1316', '8AM to 6PM', '', '');
 var aPieceOfCake = new Restaurant ('asian', 'A Piece Of Cake', '$', '2401 2nd Ave, Seattle, WA 98121', '(206) 623-8284', '9AM to 9PM', 'apieceofcakeseattle.com', '');
@@ -46,10 +44,7 @@ var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattl
 
 var restaurants;
 
-restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, bizzarro,
-
-loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse, tacosC, elCam, tacosEL, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
-
+restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, bizzarro, loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse, tacosC, elCam, tacosEl, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
 
 function getRestaurant(category, priceRange){
   var result = [];
@@ -62,20 +57,89 @@ function getRestaurant(category, priceRange){
   return result;
 }
 
+var img1 = document.getElementById('img1');
+console.log('img1 is: ' + img1);
+var img2 = document.getElementById('img2');
+console.log('img2 is: ' + img1);
+var img3 = document.getElementById('img3');
 
 function displayRecommendedRestaurants(){
 
 ///test function getRestaurant
-var recommendedRestaurant = getRestaurant('asian', '$$$');
-console.log(recommendedRestaurant);
+  var recommendedRestaurant = getRestaurant('asian', '$$$');
+  console.log(recommendedRestaurant);
 
-var img1 = document.getElementById('img1');
-var img2 = document.getElementById('img2');
-var img3 = document.getElementById('img3');
+//var img1 = document.getElementById('img1');
+//var img2 = document.getElementById('img2');
+//var img3 = document.getElementById('img3');
 
-img1.src = recommendedRestaurant[0].imagePath;
-img2.src = recommendedRestaurant[1].imagePath;
-img3.src = recommendedRestaurant[2].imagePath;
+  img1.src = recommendedRestaurant[0].imagePath;
+  img2.src = recommendedRestaurant[1].imagePath;
+  img3.src = recommendedRestaurant[2].imagePath;
 }
 
 displayRecommendedRestaurants();
+
+img1.addEventListener('click', handleClick, false);
+img2.addEventListener('click', handleClick, false);
+img3.addEventListener('click', handleClick, false);
+
+var selectedCategory;
+var selectedPriceRange;
+
+//still working on the handleClick function
+function handleClick(event){
+  var selectedImageId = event.target.id;
+  console.log('selectedImageId is: ' + selectedImageId);
+
+  if(selectedImageId === 'img1'){
+    selectedCategory = 'asian';
+  }
+  if(selectedImageId === 'img2'){
+    selectedCategory = 'Italian';
+  }
+  if (selectedImageId === 'img3'){
+    selectedCategory = 'mexican';
+  }
+  displayPriceRangeImages();
+
+  if (selectedImageId === 'img1'){
+    selectedPriceRange = '$';
+  }
+
+  if (selectedImageId === 'img2'){
+    selectedPriceRange = '$$';
+  }
+
+  if (selectedImageId === 'img3'){
+    selectedPriceRange = '$$$';
+  }
+
+  console.log('The selected category is: ' + selectedCategory);
+  console.log('The selected price is: ' + selectedPriceRange);
+
+  //getRestaurant();
+}
+
+function displayPriceRangeImages(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+
+  img1.src = './images/dollarSigns/lowPrice.jpg';
+  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
+  img3.src = './images/dollarSigns/highPriceRange.jpg';
+}
+
+/*function displayDishes() {
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+
+  img1.src = './images/asian/asianDishes.jpg';
+  img2.src =
+  img3.src =
+}
+displayDishes();
+*/
+
