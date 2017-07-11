@@ -12,6 +12,7 @@ function Restaurant (category, name, priceRange, address, phoneNumber, hours, li
 }
 
 
+
 //Asian Restaurants
 var thanhSonTofu = new Restaurant ('asian', 'Thanh Son Tofu', '$', '1248 S King St, Seattle, WA 98144', '(206) 320-1316', '8AM to 6PM', '', '');
 var aPieceOfCake = new Restaurant ('asian', 'A Piece Of Cake', '$', '2401 2nd Ave, Seattle, WA 98121', '(206) 623-8284', '9AM to 9PM', 'apieceofcakeseattle.com', '');
@@ -19,7 +20,7 @@ var moonLight = new Restaurant ('asian', 'Moon Light Cafe', '$', '1919 S Jackson
 var bambooGarden = new Restaurant ('asian', 'Bamboo Garden Vegetarian', '$$', '364 Roy Street, Seattle, WA 98109', '(206) 282-6616', '11AM to 10PM', 'http://www.bamboo-garden.co/', '');
 var wedgwood = new Restaurant ('asian', 'Wedgwood Vegetarian Thai', '$$', '420 Broadway E., Seattle, WA 98102', '(206) 724-0655', '12:00PM to 9:30PM', 'http://wedgwoodii.com/', '');
 var roti = new Restaurant ('asian', 'Roti Indian Cuisine', '$$', '530 Queen Anne Ave N, Seattle, WA 98109', '(206) 216-7684', '11:30AM to 9:45PM', 'http://rotirestaurantseattle.com/', '');
-var harbor = new Restaurant ('asian', 'Harbor City Restaurant', '$$', '707 S King St., Seattle, WA 98104', '(206) 621-2228', '8:30AM to 11:00PM', '');
+var harbor = new Restaurant ('asian', 'Harbor City Restaurant', '$$$', '707 S King St., Seattle, WA 98104', '(206) 621-2228', '8:30AM to 11:00PM', '', '');
 var sevenBeef = new Restaurant ('asian', 'Seven Beef', '$$$', '1305 E Jefferson St., Seattle WA 98122', '(206) 328-7090', '5:00PM to 10:00PM', 'sevenbeef.com', '');
 var shiros = new Restaurant ('asian', 'Shiro\'s', '$$$', '2401 2nd Ave, Seattle WA 98121', '(206) 443-9844', '5:30PM to 10:30PM', 'https://shiros.com/', '');
 //Mexican Restaurants
@@ -43,10 +44,10 @@ var tavolata = new Restaurant ('Italian','Tavolata','$$$','2323 2nd Ave, Seattle
 var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt Way NE, Seattle, WA 98105','(206)466-2380','4:00PM-10:00PM');
 var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattle, WA 98122','(206) 251-7673','5:00PM-11:00PM');
 
-///'./images/mexican/Zocalo.jpg'
 var restaurants;
 
-restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros];
+restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, bizzarro, loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse, tacosC, elCam, tacosEl, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
+
 
 function getRestaurant(category, priceRange){
   var result = [];
@@ -56,31 +57,94 @@ function getRestaurant(category, priceRange){
       result.push(restaurants[i]);
     }
   }
-  console.log(result);
   return result;
 }
 
-function displayRecommendedRestaurants(){
-///test function getRestaurant
-var recommendedRestaurant = getRestaurant('asian', '$$$');
-console.log(recommendedRestaurant);
-
 var img1 = document.getElementById('img1');
+console.log('img1 is: ' + img1);
 var img2 = document.getElementById('img2');
+console.log('img2 is: ' + img1);
 var img3 = document.getElementById('img3');
 
-img1.src = recommendedRestaurant[0].imagePath;
-img2.src = recommendedRestaurant[1].imagePath;
-img3.src = recommendedRestaurant[2].imagePath;
+function displayRecommendedRestaurants(){
+///test function getRestaurant
+  var recommendedRestaurant = getRestaurant('asian', '$$$');
+  console.log(recommendedRestaurant);
+
+//var img1 = document.getElementById('img1');
+//var img2 = document.getElementById('img2');
+//var img3 = document.getElementById('img3');
+
+  img1.src = recommendedRestaurant[0].imagePath;
+  img2.src = recommendedRestaurant[1].imagePath;
+  img3.src = recommendedRestaurant[2].imagePath;
 }
 
 displayRecommendedRestaurants();
 
-/*
-function displayDishes
-img1.src = ./images/asian/asianDishes.jpg
-img2.src =
-img3.src =
+img1.addEventListener('click', handleClick, false);
+img2.addEventListener('click', handleClick, false);
+img3.addEventListener('click', handleClick, false);
 
+
+
+var selectedCategory;
+var selectedPriceRange;
+
+//still working on the handleClick function
+function handleClick(event){
+  var selectedImageId = event.target.id;
+  console.log('selectedImageId is: ' + selectedImageId);
+
+  if(selectedImageId === 'img1'){
+    selectedCategory = 'asian';
+  }
+  if(selectedImageId === 'img2'){
+    selectedCategory = 'Italian';
+  }
+  if (selectedImageId === 'img3'){
+    selectedCategory = 'mexican';
+  }
+  displayPriceRangeImages();
+
+  if (selectedImageId === 'img1'){
+    selectedPriceRange = '$';
+  }
+
+  if (selectedImageId === 'img2'){
+    selectedPriceRange = '$$';
+  }
+
+  if (selectedImageId === 'img3'){
+    selectedPriceRange = '$$$';
+  }
+
+  console.log('The selected category is: ' + selectedCategory);
+  console.log('The selected price is: ' + selectedPriceRange);
+
+  //getRestaurant();
+}
+
+
+
+function displayPriceRangeImages(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+
+  img1.src = './images/dollarSigns/lowPrice.jpg';
+  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
+  img3.src = './images/dollarSigns/highPriceRange.jpg';
+}
+
+/*function displayDishes() {
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+
+  img1.src = './images/asian/asianDishes.jpg';
+  img2.src =
+  img3.src =
+}
 displayDishes();
 */
