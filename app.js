@@ -40,7 +40,7 @@ function getRestaurant(category, priceRange){
 
 function displayRecommendedRestaurants(){
 ///test function getRestaurant
-var recommendedRestaurant = getRestaurant('asian', '$$$');
+var recommendedRestaurant = getRestaurant('italian', '$$$');
 console.log(recommendedRestaurant);
 
 var img1 = document.getElementById('img1');
