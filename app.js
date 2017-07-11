@@ -49,35 +49,29 @@ var tavolata = new Restaurant ('Italian','Tavolata','$$$','2323 2nd Ave, Seattle
 var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt Way NE, Seattle, WA 98105','(206)466-2380','4:00PM-10:00PM');
 var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattle, WA 98122','(206) 251-7673','5:00PM-11:00PM');
 
-///'./images/mexican/Zocalo.jpg'
->>>>>>> fc6bafa9e487c9515ef73a16cdabcf76a58a2bd9
 var restaurants;
 
 restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros];
 
-<<<<<<< HEAD
 function getRestaurant (category, priceRange) {
   var result = [];
 
   for (var i = 0; i < restaurants.length; i++) {
-=======
 function getRestaurant(category, priceRange){
   var result = [];
 
   for(var i = 0; i < restaurants.length; i++){
->>>>>>> fc6bafa9e487c9515ef73a16cdabcf76a58a2bd9
     if ((restaurants[i].category === category) && (restaurants[i].priceRange === priceRange)){
       result.push(restaurants[i]);
     }
   }
-<<<<<<< HEAD
   return result;
 }
 
 ///test getRestaurant function
 var recommendedRestaurant = getRestaurant('asian', '$$$');
 console.log (recommendedRestaurant);
-=======
+
   console.log(result);
   return result;
 }
