@@ -62,15 +62,6 @@ function getRestaurant(category, priceRange){
   return result;
 }
 
-function displayRecommendedRestaurants(){
-
-///test getRestaurant function
-var recommendedRestaurant = getRestaurant('asian', '$$$');
-console.log (recommendedRestaurant);
-
-  console.log(result);
-  return result;
-}
 
 function displayRecommendedRestaurants(){
 ///test function getRestaurant
