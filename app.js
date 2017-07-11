@@ -45,12 +45,8 @@ var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattl
 
 var restaurants;
 
-restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros];
-
-function getRestaurant (category, priceRange) {
-  var result = [];
-
-  for (var i = 0; i < restaurants.length; i++) {
+restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, bizzarro,
+loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse];
 
 function getRestaurant(category, priceRange){
   var result = [];
@@ -59,9 +55,7 @@ function getRestaurant(category, priceRange){
     if ((restaurants[i].category === category) && (restaurants[i].priceRange === priceRange)){
       result.push(restaurants[i]);
     }
-  }
-
-  return result;
+    return result;
 }
 
 ///test getRestaurant function
