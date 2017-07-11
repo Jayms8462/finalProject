@@ -126,7 +126,7 @@ h3{
   background-color:#5D9CEC;
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
-  border-radius:6px;
+  border-radius:25px;
   border:1px solid #5D9CEC;
   display:inline-block;
   cursor:pointer;
