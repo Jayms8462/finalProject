@@ -11,8 +11,6 @@ function Restaurant (category, name, priceRange, address, phoneNumber, hours, li
   this.imagePath = imagePath;
 }
 
-
-
 //Asian Restaurants
 var thanhSonTofu = new Restaurant ('asian', 'Thanh Son Tofu', '$', '1248 S King St, Seattle, WA 98144', '(206) 320-1316', '8AM to 6PM', '', '');
 var aPieceOfCake = new Restaurant ('asian', 'A Piece Of Cake', '$', '2401 2nd Ave, Seattle, WA 98121', '(206) 623-8284', '9AM to 9PM', 'apieceofcakeseattle.com', '');
@@ -48,7 +46,6 @@ var restaurants;
 
 restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, bizzarro, loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse, tacosC, elCam, tacosEl, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
 
-
 function getRestaurant(category, priceRange){
   var result = [];
 
@@ -67,6 +64,7 @@ console.log('img2 is: ' + img1);
 var img3 = document.getElementById('img3');
 
 function displayRecommendedRestaurants(){
+
 ///test function getRestaurant
   var recommendedRestaurant = getRestaurant('asian', '$$$');
   console.log(recommendedRestaurant);
@@ -85,8 +83,6 @@ displayRecommendedRestaurants();
 img1.addEventListener('click', handleClick, false);
 img2.addEventListener('click', handleClick, false);
 img3.addEventListener('click', handleClick, false);
-
-
 
 var selectedCategory;
 var selectedPriceRange;
@@ -125,8 +121,6 @@ function handleClick(event){
   //getRestaurant();
 }
 
-
-
 function displayPriceRangeImages(){
   var img1 = document.getElementById('img1');
   var img2 = document.getElementById('img2');
@@ -148,3 +142,4 @@ function displayPriceRangeImages(){
 }
 displayDishes();
 */
+

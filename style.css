@@ -42,10 +42,11 @@ h3{
   text-decoration: none;
   color: white;
   margin: 0px 20px 0px 20px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', ans-serif;
   font-size: 20px;
+  top: 12.5px;
+  bottom: 12.5px;
 }
-
 .mainBody {
   width: auto;
   height: auto;
@@ -59,6 +60,8 @@ h3{
   color:black;
   font-size: 16px;
   list-style:none;
+  border-radius: 25px;
+  box-shadow:0 0 15px #040303;
 }
 .mainBody li {
   list-style: none;
@@ -157,4 +160,19 @@ h3{
 
 #joelAboutMe {
   text-align: left;
+}
+
+hr {
+  display: block;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.no-tandb-margin {
+  margin-top: 0;
+  margin-bottom: 0;
 }
