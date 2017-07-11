@@ -88,12 +88,10 @@ img3.src = recommendedRestaurant[2].imagePath;
 
 displayRecommendedRestaurants();
 
-/*
-function displayDishes
-img1.src = ./images/asian/asianDishes.jpg
-img2.src =
-img3.src =
 
+function displayDishes() {
+  img1.src = ./images/asian/asianDishes.jpg
+  img2.src =
+  img3.src =
+}
 displayDishes();
-*/
-
