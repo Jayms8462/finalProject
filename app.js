@@ -62,7 +62,7 @@ function getRestaurant(category, priceRange){
 
 function displayRecommendedRestaurants(){
 ///test function getRestaurant
-var recommendedRestaurant = getRestaurant('italian', '$$$');
+var recommendedRestaurant = getRestaurant('asian', '$$$');
 console.log(recommendedRestaurant);
 
 var img1 = document.getElementById('img1');
@@ -84,4 +84,3 @@ img3.src =
 
 displayDishes();
 */
-
