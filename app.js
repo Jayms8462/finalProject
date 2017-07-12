@@ -47,44 +47,36 @@ var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattl
 
 var restaurants;
 
-restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, bizzarro, loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse, tacosC, elCam, tacosEl, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
+restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, moLuPasta, bizzarro, loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse, tacosC, elCam, tacosEl, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
 
 
 function getRestaurant(category, priceRange){
   var result = [];
 
   for(var i = 0; i < restaurants.length; i++){
+    //console.log('restaurants[i].category === category' + restaurants[i].category + ' : ' + category);
+    //console.log('restaurants[i].priceRange === priceRange' + restaurants[i].priceRange + ' : ' + priceRange);
     if ((restaurants[i].category === category) && (restaurants[i].priceRange === priceRange)){
       result.push(restaurants[i]);
     }
-    return result;
-    console.log(getRestaurant);
   }
+  return result;
 }
 
-///test getRestaurant function
-var recommendedRestaurant = getRestaurant('asian', '$$$');
-console.log (recommendedRestaurant);
-
-var img1 = document.getElementById('img1');
-console.log('img1 is: ' + img1);
-var img2 = document.getElementById('img2');
-console.log('img2 is: ' + img2);
-var img3 = document.getElementById('img3');
-
-function displayRecommendedRestaurants(){
+function displayRecommendedRestaurants(category, priceRange){
 ///test function getRestaurant
-  //var recommendedRestaurant = getRestaurant('asian', '$$$');
+  var recommendedRestaurant = getRestaurant(category, priceRange);
   //console.log(recommendedRestaurant);
 
-var img1 = document.getElementById('img1');
-var img2 = document.getElementById('img2');
-var img3 = document.getElementById('img3');
-
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
 
   img1.src = recommendedRestaurant[0].imagePath;
   img2.src = recommendedRestaurant[1].imagePath;
   img3.src = recommendedRestaurant[2].imagePath;
+
+  return recommendedRestaurant;
 }
 
 //displayRecommendedRestaurants();
@@ -97,15 +89,16 @@ img3.addEventListener('click', handleClick, false);
 
 var selectedCategory;
 var selectedPriceRange;
-var click = [];
+var click = 0;
+var resultRestaurants = [];
+//contain all 3 recommendedRestaurant
 
-//still working on the handleClick function
 function handleClick(event){
   click++;
   var selectedImageId = event.target.id;
   console.log('selectedImageId is: ' + selectedImageId);
 
-  if(clicks === 1) {
+  if(click === 1) {
 
     if(selectedImageId === 'img1'){
       selectedCategory = 'asian';
@@ -126,41 +119,37 @@ if (click === 2){
     selectedPriceRange = '$';
   }
 
+  if (selectedImageId === 'img2'){
+    selectedPriceRange = '$$';
+  }
+
   if (selectedImageId === 'img3'){
-      selectedPriceRange = '$$$';
-    }
+    selectedPriceRange = '$$$';
   }
-  if (clicks === 3){
-    if (selectedImageId === 'img1' && selectedPriceRange === '$' ){
-      displayAsianPlaces();
-    }
-
-    if (selectedImageId === 'img2'){
-      selectedPriceRange = '$$';
-      displayAsianPlaces();
-    }
-
-    if (selectedImageId === 'img3'){
-      selectedPriceRange = '$$$';
-    }
-  }
+  console.log('The selected category is: ' + selectedCategory);
+  console.log('The selected price is: ' + selectedPriceRange);
+  resultRestaurants = displayRecommendedRestaurants(selectedCategory, selectedPriceRange);
 }
 
-if ((selectedCategory = 'asian') && (selectedPriceRange = '$')){
-  displayRecommendedRestaurants();
+if (click === 3){
+  if (selectedImageId === 'img1'){
+    printRestaurantInfo(resultRestaurants[0]);
+  }
+
+  if (selectedImageId === 'img2'){
+    printRestaurantInfo(resultRestaurants[1]);
+  }
+
+  if (selectedImageId === 'img3'){
+    printRestaurantInfo(resultRestaurants[2]);
+  }
 }
-
-
-
-
-
 
   console.log('The selected category is: ' + selectedCategory);
   console.log('The selected price is: ' + selectedPriceRange);
-
-  //getRestaurant();
-  //displayRecommendedRestaurants();
 }
+
+
 
 
 function displayPriceRangeImages(){
