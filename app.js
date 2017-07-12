@@ -21,7 +21,7 @@ var bambooGarden = new Restaurant ('asian', 'Bamboo Garden Vegetarian', '$$', '3
 var wedgwood = new Restaurant ('asian', 'Wedgwood Vegetarian Thai', '$$', '420 Broadway E., Seattle, WA 98102', '(206) 724-0655', '12:00PM to 9:30PM', 'https://www.yelp.com/biz/wedgwood-ii-vegetarian-thai-seattle', './images/asian/wedgwood.jpg');
 var roti = new Restaurant ('asian', 'Roti Indian Cuisine', '$$', '530 Queen Anne Ave N, Seattle, WA 98109', '(206) 216-7684', '11:30AM to 9:45PM', 'https://www.yelp.com/biz/roti-indian-cuisine-seattle', './images/asian/roti.jpg');
 var harbor = new Restaurant ('asian', 'Harbor City Restaurant', '$$$', '707 S King St., Seattle, WA 98104', '(206) 621-2228', '8:30AM to 11:00PM', 'https://www.yelp.com/biz/harbor-city-restaurant-seattle', './images/asian/harborCity.jpg');
-var sevenBeef = new Restaurant ('asian', 'Seven Beef', '$$$', '1305 E Jefferson St., Seattle WA 98122', '(206) 328-7090', '5:00PM to 10:00PM', 'https://www.yelp.com/biz/seven-beef-seattle', './images/asianSevenBeef.jpg');
+var sevenBeef = new Restaurant ('asian', 'Seven Beef', '$$$', '1305 E Jefferson St., Seattle WA 98122', '(206) 328-7090', '5:00PM to 10:00PM', 'https://www.yelp.com/biz/seven-beef-seattle', './images/asian/asianSevenBeef.jpg');
 var shiros = new Restaurant ('asian', 'Shiro\'s', '$$$', '2401 2nd Ave, Seattle WA 98121', '(206) 443-9844', '5:30PM to 10:30PM', 'https://www.yelp.com/biz/shiros-seattle', './images/asian/harborCity.jpg');
 //Mexican Restaurants
 var tacosC = new Restaurant ('mexican', 'Tacos Chukis', '$', '219 Broadway E Seattle, WA 98102', '(206) 328-4447', '11:00AM to 10:00pm', 'https://www.yelp.com/biz/tacos-chukis-seattle', './images/mexican/TacoChuk.jpg');
