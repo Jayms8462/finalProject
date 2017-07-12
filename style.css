@@ -14,7 +14,7 @@ body {
 }
 .topBar i {
   color:white;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 h1{
   font-family: 'Quicksand', sans-serif;
@@ -33,7 +33,7 @@ h3{
   height: 50px;
   position: absolute;
   left: 0px;
-  top: 120px;
+  top: 90px;
   display: block;
   background-color: #040303;
   text-align: center;
