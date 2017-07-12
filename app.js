@@ -56,6 +56,7 @@ function getRestaurant(category, priceRange){
       result.push(restaurants[i]);
     }
     return result;
+    console.log(getRestaurant);
   }
 }
 
@@ -72,19 +73,21 @@ var img3 = document.getElementById('img3');
 function displayRecommendedRestaurants(){
 
 ///test function getRestaurant
-  var recommendedRestaurant = getRestaurant('asian', '$$$');
-  console.log(recommendedRestaurant);
+  //var recommendedRestaurant = getRestaurant('asian', '$$$');
+  //console.log(recommendedRestaurant);
 
-//var img1 = document.getElementById('img1');
-//var img2 = document.getElementById('img2');
-//var img3 = document.getElementById('img3');
+var img1 = document.getElementById('img1');
+var img2 = document.getElementById('img2');
+var img3 = document.getElementById('img3');
+
+
 
   //img1.src = recommendedRestaurant[0].imagePath;
   //img2.src = recommendedRestaurant[1].imagePath;
   //img3.src = recommendedRestaurant[2].imagePath;
 }
 
-displayRecommendedRestaurants();
+//displayRecommendedRestaurants();
 
 img1.addEventListener('click', handleClick, false);
 img2.addEventListener('click', handleClick, false);
@@ -92,42 +95,66 @@ img3.addEventListener('click', handleClick, false);
 
 var selectedCategory;
 var selectedPriceRange;
+var clicks = [];
 
 //still working on the handleClick function
 function handleClick(event){
   var selectedImageId = event.target.id;
   console.log('selectedImageId is: ' + selectedImageId);
+  clicks++;
+  if(clicks === 1) {
 
-  if(selectedImageId === 'img1'){
-    selectedCategory = 'asian';
+    if(selectedImageId === 'img1'){
+      selectedCategory = 'asian';
+    }
+
+    if(selectedImageId === 'img2'){
+      selectedCategory = 'Italian';
+    }
+
+    if (selectedImageId === 'img3'){
+      selectedCategory = 'mexican';
+    }
+    displayPriceRangeImages();
   }
 
-  if(selectedImageId === 'img2'){
-    selectedCategory = 'Italian';
+  if(clicks === 2 ){
+    if (selectedImageId === 'img1'){
+      selectedPriceRange = '$';
+    }
+
+    if (selectedImageId === 'img2'){
+      selectedPriceRange = '$$';
+    }
+
+    if (selectedImageId === 'img3'){
+      selectedPriceRange = '$$$';
+    }
+  }
+  if (clicks === 3){
+    if (selectedImageId === 'img1' && selectedPriceRange === '$' ){
+      displayAsianPlaces();
+    }
+
+    if (selectedImageId === 'img2'){
+      selectedPriceRange = '$$';
+      displayAsianPlaces();
+    }
+
+    if (selectedImageId === 'img3'){
+      selectedPriceRange = '$$$';
+    }
   }
 
-  if (selectedImageId === 'img3'){
-    selectedCategory = 'mexican';
-  }
 
-  displayPriceRangeImages();
 
-  if (selectedImageId === 'img1'){
-    selectedPriceRange = '$';
-  }
 
-  if (selectedImageId === 'img2'){
-    selectedPriceRange = '$$';
-  }
-
-  if (selectedImageId === 'img3'){
-    selectedPriceRange = '$$$';
-  }
 
   console.log('The selected category is: ' + selectedCategory);
   console.log('The selected price is: ' + selectedPriceRange);
 
   //getRestaurant();
+  //displayRecommendedRestaurants();
 }
 
 function displayPriceRangeImages(){
@@ -138,4 +165,34 @@ function displayPriceRangeImages(){
   img1.src = './images/dollarSigns/lowPrice.jpg';
   img2.src = './images/dollarSigns/mediumPriceRange.jpg';
   img3.src = './images/dollarSigns/highPriceRange.jpg';
+}
+
+function displayItalianPlaces(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+
+  img1.src = './images/dollarSigns/lowPrice.jpg';
+  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
+  img3.src = './images/dollarSigns/highPriceRange.jpg';
+}
+function displayMexicanPlaces(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+
+  img1.src = './images/dollarSigns/lowPrice.jpg';
+  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
+  img3.src = './images/dollarSigns/highPriceRange.jpg';
+
+}
+function displayAsianPlaces(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+
+  img1.src = './images/italian/bizzarro.jpg';
+  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
+  img3.src = './images/dollarSigns/highPriceRange.jpg';
+
 }
