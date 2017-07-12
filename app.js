@@ -130,7 +130,10 @@ if (click === 2){
     selectedPriceRange = '$$$';
   }
 }
-  //displayRecommendedRestaurants();
+
+if ((selectedCategory = 'asian') && (selectedPriceRange = '$')){
+  displayRecommendedRestaurants();
+}
 
 
   console.log('The selected category is: ' + selectedCategory);
