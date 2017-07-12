@@ -117,6 +117,7 @@ function handleClick(event){
     displayPriceRangeImages();
 
 
+
   if(clicks === 1 ){
     if (selectedImageId === 'img1'){
       selectedPriceRange = '$';
@@ -131,19 +132,43 @@ function handleClick(event){
     }
   }
   if (clicks === 2){
+    //Asian places
     if (selectedImageId === 'img1' && selectedPriceRange === '$' ){
-      displayAsianPlaces();
+      displayLowAsianPlaces();
     }
-
-    if (selectedImageId === 'img2'){
+    if (selectedImageId === 'img1' && selectedPriceRange === '$$'){
+      displayMidAsianPlaces();
+    }
+    if (selectedImageId === 'img1' && selectedPriceRange === '$$$'){
+      displayHighItalianPlaces();
+    }
+    //Mexican places
+    if (selectedImageId === 'img2' && selectedPriceRange === '$'){
+      selectedPriceRange = '$';
+      displayLowMexicanPlaces();
+    }
+    if (selectedImageId === 'img2' && selectedPriceRange === '$$'){
       selectedPriceRange = '$$';
-      displayAsianPlaces();
+      displayMidMexicanPlaces();
+    }
+    if (selectedImageId === 'img2' && selectedPriceRange === '$$$'){
+      selectedPriceRange = '$$$';
+      displayHighMexicanPlaces();
+    }
+    //Italian places
+    if (selectedImageId === 'img3' && selectedPriceRange === '$'){
+      selectedPriceRange = '$';
+      displayLowItalianPlaces();
+    }
+    if (selectedImageId === 'img3' && selectedPriceRange === '$$'){
+      selectedPriceRange = '$$';
+      displayMidItalianPlaces();
+    }
+    if (selectedImageId === 'img3' && selectedPriceRange === '$$$'){
+      selectedPriceRange = '$$$';
+      displayHighItalianPlaces();
     }
 
-    if (selectedImageId === 'img3'){
-      selectedPriceRange = '$$$';
-    }
-    //getRestaurant();
   }
 
 
@@ -161,37 +186,80 @@ function displayPriceRangeImages(){
   var img1 = document.getElementById('img1');
   var img2 = document.getElementById('img2');
   var img3 = document.getElementById('img3');
-
   img1.src = './images/dollarSigns/lowPrice.jpg';
   img2.src = './images/dollarSigns/mediumPriceRange.jpg';
   img3.src = './images/dollarSigns/highPriceRange.jpg';
 }
 
-function displayItalianPlaces(){
+function displayLowItalianPlaces(){
   var img1 = document.getElementById('img1');
   var img2 = document.getElementById('img2');
   var img3 = document.getElementById('img3');
-
   img1.src = './images/italian/bizzarro.jpg';
   img2.src = './images/italian/bizzarro.jpg';
   img3.src = './images/italian/bizzarro.jpg';
 }
-function displayMexicanPlaces(){
+function displayMidItalianPlaces(){
   var img1 = document.getElementById('img1');
   var img2 = document.getElementById('img2');
   var img3 = document.getElementById('img3');
-
   img1.src = './images/italian/bizzarro.jpg';
   img2.src = './images/italian/bizzarro.jpg';
   img3.src = './images/italian/bizzarro.jpg';
 }
-function displayAsianPlaces(){
+function displayHighItalianPlaces(){
   var img1 = document.getElementById('img1');
   var img2 = document.getElementById('img2');
   var img3 = document.getElementById('img3');
-
   img1.src = './images/italian/bizzarro.jpg';
   img2.src = './images/italian/bizzarro.jpg';
   img3.src = './images/italian/bizzarro.jpg';
-
+}
+function displayLowMexicanPlaces(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+  img1.src = './images/italian/bizzarro.jpg';
+  img2.src = './images/italian/bizzarro.jpg';
+  img3.src = './images/italian/bizzarro.jpg';
+}
+function displayMidMexicanPlaces(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+  img1.src = './images/italian/bizzarro.jpg';
+  img2.src = './images/italian/bizzarro.jpg';
+  img3.src = './images/italian/bizzarro.jpg';
+}
+function displayHighMexicanPlaces(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+  img1.src = './images/italian/bizzarro.jpg';
+  img2.src = './images/italian/bizzarro.jpg';
+  img3.src = './images/italian/bizzarro.jpg';
+}
+function displayLowAsianPlaces(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+  img1.src = './images/italian/bizzarro.jpg';
+  img2.src = './images/italian/bizzarro.jpg';
+  img3.src = './images/italian/bizzarro.jpg';
+}
+function displayMidAsianPlaces(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+  img1.src = './images/asian/harborCity.jpg';
+  img2.src = './images/italian/bizzarro.jpg';
+  img3.src = './images/italian/bizzarro.jpg';
+}
+function displayHighAsianPlaces(){
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
+  img1.src = './images/italian/bizzarro.jpg';
+  img2.src = './images/italian/bizzarro.jpg';
+  img3.src = './images/italian/bizzarro.jpg';
 }
