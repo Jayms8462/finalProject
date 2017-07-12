@@ -42,7 +42,7 @@ h3{
 }
 .mainBody {
   width: auto;
-  height: 600px;
+  height: 700px;
   margin-top: 160px;
   margin-left: 100px;
   margin-right: 100px;
@@ -86,9 +86,9 @@ h3{
   margin-top: 100px;
   margin-left: 50px;
   margin-right: 50px;
+  padding: -50px;
 }
 #img1 {
-  float: left;
   width: 30%;
   height: 300px;
   border-radius: 20px;
@@ -96,25 +96,29 @@ h3{
   border-radius: 25px;
 }
 #img2 {
-  float: left;
   width: 30%;
   height: 300px;
-  margin-left: 5%;
+  margin-left:;
   border-radius: 20px;
   border: 1px solid black;
 }
 #img3 {
-  float: right;
   width: 30%;
   height: 300px;
   border-radius: 20px;
   border: 1px solid black;
 }
+#results {
+
+}
 #generated-list {
-  float: center;
   width: 50%;
   height: 400px;
-  color: brown;
-  font-style: bolder;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
   padding: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top:20px;
 }
