@@ -101,8 +101,6 @@ var clicks = [];
 function handleClick(event){
   var selectedImageId = event.target.id;
   console.log('selectedImageId is: ' + selectedImageId);
-  clicks++;
-  if(clicks === 1) {
 
     if(selectedImageId === 'img1'){
       selectedCategory = 'asian';
@@ -115,10 +113,11 @@ function handleClick(event){
     if (selectedImageId === 'img3'){
       selectedCategory = 'mexican';
     }
+    clicks++;
     displayPriceRangeImages();
-  }
 
-  if(clicks === 2 ){
+
+  if(clicks === 1 ){
     if (selectedImageId === 'img1'){
       selectedPriceRange = '$';
     }
@@ -131,7 +130,7 @@ function handleClick(event){
       selectedPriceRange = '$$$';
     }
   }
-  if (clicks === 3){
+  if (clicks === 2){
     if (selectedImageId === 'img1' && selectedPriceRange === '$' ){
       displayAsianPlaces();
     }
@@ -144,6 +143,7 @@ function handleClick(event){
     if (selectedImageId === 'img3'){
       selectedPriceRange = '$$$';
     }
+    //getRestaurant();
   }
 
 
@@ -172,19 +172,18 @@ function displayItalianPlaces(){
   var img2 = document.getElementById('img2');
   var img3 = document.getElementById('img3');
 
-  img1.src = './images/dollarSigns/lowPrice.jpg';
-  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
-  img3.src = './images/dollarSigns/highPriceRange.jpg';
+  img1.src = './images/italian/bizzarro.jpg';
+  img2.src = './images/italian/bizzarro.jpg';
+  img3.src = './images/italian/bizzarro.jpg';
 }
 function displayMexicanPlaces(){
   var img1 = document.getElementById('img1');
   var img2 = document.getElementById('img2');
   var img3 = document.getElementById('img3');
 
-  img1.src = './images/dollarSigns/lowPrice.jpg';
-  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
-  img3.src = './images/dollarSigns/highPriceRange.jpg';
-
+  img1.src = './images/italian/bizzarro.jpg';
+  img2.src = './images/italian/bizzarro.jpg';
+  img3.src = './images/italian/bizzarro.jpg';
 }
 function displayAsianPlaces(){
   var img1 = document.getElementById('img1');
@@ -192,7 +191,7 @@ function displayAsianPlaces(){
   var img3 = document.getElementById('img3');
 
   img1.src = './images/italian/bizzarro.jpg';
-  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
-  img3.src = './images/dollarSigns/highPriceRange.jpg';
+  img2.src = './images/italian/bizzarro.jpg';
+  img3.src = './images/italian/bizzarro.jpg';
 
 }
