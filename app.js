@@ -161,3 +161,38 @@ function displayPriceRangeImages(){
   img2.src = './images/dollarSigns/mediumPriceRange.jpg';
   img3.src = './images/dollarSigns/highPriceRange.jpg';
 }
+
+
+function printRestaurantInfo(selectedRestaurant){
+  
+  var ulEl = document.getElementById('generated-list');
+  ulEl.textContent= '';
+
+  var liEl = document.createElement('li');
+  liEl.textContent = 'Selected Restaurant: ' + selectedRestaurant.name;
+  ulEl.appendChild(liEl);
+
+  var liEl = document.createElement('li');
+  liEl.textContent = 'Selected category: ' + selectedRestaurant.category;
+  ulEl.appendChild(liEl);
+
+  var liEl = document.createElement('li');
+  liEl.textContent = 'Price range: ' + selectedRestaurant.priceRange;
+  ulEl.appendChild(liEl);
+
+  var liEl = document.createElement('li');
+  liEl.textContent = 'Address: ' + selectedRestaurant.address;
+  ulEl.appendChild(liEl);
+
+  var liEl = document.createElement('li');
+  liEl.textContent = 'Phone number: ' + selectedRestaurant.phoneNumber;
+  ulEl.appendChild(liEl);
+
+  var liEl = document.createElement('li');
+  liEl.textContent = 'Hours: ' + selectedRestaurant.hours;
+  ulEl.appendChild(liEl);
+
+  var liEl = document.createElement('li');
+  liEl.textContent = 'Link: ' + selectedRestaurant.link;
+  ulEl.appendChild(liEl);
+}
