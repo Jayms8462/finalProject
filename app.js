@@ -11,6 +11,8 @@ function Restaurant (category, name, priceRange, address, phoneNumber, hours, li
   this.imagePath = imagePath;
 }
 
+
+
 //Asian Restaurants
 var thanhSonTofu = new Restaurant ('asian', 'Thanh Son Tofu', '$', '1248 S King St, Seattle, WA 98144', '(206) 320-1316', '8AM to 6PM', 'https://www.yelp.com/biz/thanh-son-tofu-seattle-3?osq=Than+Son+Tofu', './images/asian/thanhSonTofu.jpg');
 var aPieceOfCake = new Restaurant ('asian', 'A Piece Of Cake', '$', '2401 2nd Ave, Seattle, WA 98121', '(206) 623-8284', '9AM to 9PM', 'https://www.yelp.com/biz/a-piece-of-cake-seattle', './images/asian/pieceOfCake.jpg');
@@ -45,45 +47,36 @@ var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattl
 
 var restaurants;
 
-restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, bizzarro, loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse, tacosC, elCam, tacosEl, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
+restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, moLuPasta, bizzarro, loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse, tacosC, elCam, tacosEl, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
+
 
 function getRestaurant(category, priceRange){
   var result = [];
 
   for(var i = 0; i < restaurants.length; i++){
+    //console.log('restaurants[i].category === category' + restaurants[i].category + ' : ' + category);
+    //console.log('restaurants[i].priceRange === priceRange' + restaurants[i].priceRange + ' : ' + priceRange);
     if ((restaurants[i].category === category) && (restaurants[i].priceRange === priceRange)){
       result.push(restaurants[i]);
     }
-    return result;
-    console.log(getRestaurant);
   }
+  return result;
 }
 
-///test getRestaurant function
-var recommendedRestaurant = getRestaurant('asian', '$$$');
-console.log (recommendedRestaurant);
-
-var img1 = document.getElementById('img1');
-console.log('img1 is: ' + img1);
-var img2 = document.getElementById('img2');
-console.log('img2 is: ' + img2);
-var img3 = document.getElementById('img3');
-
-function displayRecommendedRestaurants(){
-
+function displayRecommendedRestaurants(category, priceRange){
 ///test function getRestaurant
-  //var recommendedRestaurant = getRestaurant('asian', '$$$');
+  var recommendedRestaurant = getRestaurant(category, priceRange);
   //console.log(recommendedRestaurant);
 
-var img1 = document.getElementById('img1');
-var img2 = document.getElementById('img2');
-var img3 = document.getElementById('img3');
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
 
+  img1.src = recommendedRestaurant[0].imagePath;
+  img2.src = recommendedRestaurant[1].imagePath;
+  img3.src = recommendedRestaurant[2].imagePath;
 
-
-  //img1.src = recommendedRestaurant[0].imagePath;
-  //img2.src = recommendedRestaurant[1].imagePath;
-  //img3.src = recommendedRestaurant[2].imagePath;
+  return recommendedRestaurant;
 }
 
 //displayRecommendedRestaurants();
@@ -92,16 +85,20 @@ img1.addEventListener('click', handleClick, false);
 img2.addEventListener('click', handleClick, false);
 img3.addEventListener('click', handleClick, false);
 
+
+
 var selectedCategory;
 var selectedPriceRange;
-var clicks = [];
+var click = 0;
+var resultRestaurants = [];
+//contain all 3 recommendedRestaurant
 
-//still working on the handleClick function
 function handleClick(event){
+  click++;
   var selectedImageId = event.target.id;
   console.log('selectedImageId is: ' + selectedImageId);
-  clicks++;
-  if(clicks === 1) {
+
+  if(click === 1) {
 
     if(selectedImageId === 'img1'){
       selectedCategory = 'asian';
@@ -117,44 +114,43 @@ function handleClick(event){
     displayPriceRangeImages();
   }
 
-  if(clicks === 2 ){
-    if (selectedImageId === 'img1'){
-      selectedPriceRange = '$';
-    }
-
-    if (selectedImageId === 'img2'){
-      selectedPriceRange = '$$';
-    }
-
-    if (selectedImageId === 'img3'){
-      selectedPriceRange = '$$$';
-    }
-  }
-  if (clicks === 3){
-    if (selectedImageId === 'img1' && selectedPriceRange === '$' ){
-      displayAsianPlaces();
-    }
-
-    if (selectedImageId === 'img2'){
-      selectedPriceRange = '$$';
-      displayAsianPlaces();
-    }
-
-    if (selectedImageId === 'img3'){
-      selectedPriceRange = '$$$';
-    }
+if (click === 2){
+  if (selectedImageId === 'img1'){
+    selectedPriceRange = '$';
   }
 
+  if (selectedImageId === 'img2'){
+    selectedPriceRange = '$$';
+  }
 
+  if (selectedImageId === 'img3'){
+    selectedPriceRange = '$$$';
+  }
+  console.log('The selected category is: ' + selectedCategory);
+  console.log('The selected price is: ' + selectedPriceRange);
+  resultRestaurants = displayRecommendedRestaurants(selectedCategory, selectedPriceRange);
+}
 
+if (click === 3){
+  if (selectedImageId === 'img1'){
+    printRestaurantInfo(resultRestaurants[0]);
+  }
 
+  if (selectedImageId === 'img2'){
+    printRestaurantInfo(resultRestaurants[1]);
+  }
+
+  if (selectedImageId === 'img3'){
+    printRestaurantInfo(resultRestaurants[2]);
+  }
+}
 
   console.log('The selected category is: ' + selectedCategory);
   console.log('The selected price is: ' + selectedPriceRange);
-
-  //getRestaurant();
-  //displayRecommendedRestaurants();
 }
+
+
+
 
 function displayPriceRangeImages(){
   var img1 = document.getElementById('img1');
@@ -166,32 +162,38 @@ function displayPriceRangeImages(){
   img3.src = './images/dollarSigns/highPriceRange.jpg';
 }
 
-function displayItalianPlaces(){
-  var img1 = document.getElementById('img1');
-  var img2 = document.getElementById('img2');
-  var img3 = document.getElementById('img3');
 
-  img1.src = './images/dollarSigns/lowPrice.jpg';
-  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
-  img3.src = './images/dollarSigns/highPriceRange.jpg';
-}
-function displayMexicanPlaces(){
-  var img1 = document.getElementById('img1');
-  var img2 = document.getElementById('img2');
-  var img3 = document.getElementById('img3');
+function printRestaurantInfo(selectedRestaurant){
 
-  img1.src = './images/dollarSigns/lowPrice.jpg';
-  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
-  img3.src = './images/dollarSigns/highPriceRange.jpg';
+    var ulEl = document.getElementById('generated-list');
+    ulEl.textContent= '';
 
-}
-function displayAsianPlaces(){
-  var img1 = document.getElementById('img1');
-  var img2 = document.getElementById('img2');
-  var img3 = document.getElementById('img3');
+    var liEl = document.createElement('li');
+    liEl.textContent = 'The restaurant you selected: ' + selectedRestaurant.name;
+    ulEl.appendChild(liEl);
 
-  img1.src = './images/italian/bizzarro.jpg';
-  img2.src = './images/dollarSigns/mediumPriceRange.jpg';
-  img3.src = './images/dollarSigns/highPriceRange.jpg';
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Selected category: ' + selectedRestaurant.category;
+    ulEl.appendChild(liEl);
+
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Price range: ' + selectedRestaurant.priceRange;
+    ulEl.appendChild(liEl);
+
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Address: ' + selectedRestaurant.address;
+    ulEl.appendChild(liEl);
+
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Phone number: ' + selectedRestaurant.phoneNumber;
+    ulEl.appendChild(liEl);
+
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Hours: ' + selectedRestaurant.hours;
+    ulEl.appendChild(liEl);
+
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Link: ' + selectedRestaurant.link;
+    ulEl.appendChild(liEl);
 
 }
