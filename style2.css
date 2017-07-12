@@ -83,10 +83,12 @@ h3{
   overflow: hidden;
 }
 #img-cont {
-  margin-top: 100px;
+  margin-top: 40px;
   margin-left: 50px;
   margin-right: 50px;
   padding: -50px;
+  font-family: 'Quicksand', sans-serif;
+
 }
 #img1 {
   width: 30%;
@@ -121,4 +123,5 @@ h3{
   text-align: center;
   margin: auto;
   margin-top:20px;
+  font-weight: bold;
 }
