@@ -23,6 +23,7 @@ var roti = new Restaurant ('asian', 'Roti Indian Cuisine', '$$', '530 Queen Anne
 var harbor = new Restaurant ('asian', 'Harbor City Restaurant', '$$$', '707 S King St., Seattle, WA 98104', '(206) 621-2228', '8:30AM to 11:00PM', '', '');
 var sevenBeef = new Restaurant ('asian', 'Seven Beef', '$$$', '1305 E Jefferson St., Seattle WA 98122', '(206) 328-7090', '5:00PM to 10:00PM', 'sevenbeef.com', '');
 var shiros = new Restaurant ('asian', 'Shiro\'s', '$$$', '2401 2nd Ave, Seattle WA 98121', '(206) 443-9844', '5:30PM to 10:30PM', 'https://shiros.com/', '');
+
 //Mexican Restaurants
 var tacosC = new Restaurant ('mexican', 'Tacos Chukis', '$', '219 Broadway E Seattle, WA 98102', '(206) 328-4447', '11:00AM to 10:00pm', 'https://www.yelp.com/biz/tacos-chukis-seattle?osq=Mexican+Food');
 var elCam = new Restaurant ('mexican', 'El Camión', '$', '6416 15th Ave NW Seattle, WA 98107 at 64th St Ballard', '(206) 784-5411', '9:30AM to 10:00pm', 'https://www.yelp.com/biz/el-cami%C3%B3n-seattle-7?osq=Mexican+Food');
@@ -33,6 +34,7 @@ var elLegend = new Restaurant ('mexican', 'El Legendario Mexican Restaurant', '$
 var laAnt = new Restaurant ('mexican', 'La Antigua Casa Maria', '$$$', '1100 N 115th St Ste 101 Seattle, WA 98133 b/t N Stone Ave & N Aurora Ave Haller Lake', '(206) 420-1158', '11:00AM to 10:00PM', 'laantiguacasamaria.com');
 var zocalo = new Restaurant ('mexican', 'Zocálo', '$$$', '224 Occidental Ave S Seattle, WA 98104 b/t Main St & Washington St  Pioneer Square', '(206) 623-0550', '11:00AM to 10:00PM', 'zocaloseattle.com');
 var taqueria = new Restaurant ('mexican', 'Taqueria Cantina', '$$$', '2630 1st Ave Seattle, WA 98121 b/t Cedar St & Vine St Belltown','(206) 995-8588', '11:00AM to 11:00PM', 'taqueriacantina.com');
+
 //Italian Restaurants
 var doria = new Restaurant ('Italian','Ristroante Doria','$$$','4759 Roosevelt Way NE, Seattle, WA 98105','(206)466-2380','4:00PM-10:00PM');
 var bizzarro = new Restaurant ('Italian','Bizzarro Italian Cafe','$','1307 N 46th St, Seattle, WA 98103','(206) 632-7277','5:00PM-10:00PM');
@@ -56,9 +58,13 @@ function getRestaurant(category, priceRange){
     if ((restaurants[i].category === category) && (restaurants[i].priceRange === priceRange)){
       result.push(restaurants[i]);
     }
+    return result;
   }
-  return result;
 }
+
+///test getRestaurant function
+var recommendedRestaurant = getRestaurant('asian', '$$$');
+console.log (recommendedRestaurant);
 
 var img1 = document.getElementById('img1');
 console.log('img1 is: ' + img1);
@@ -75,9 +81,9 @@ function displayRecommendedRestaurants(){
 //var img2 = document.getElementById('img2');
 //var img3 = document.getElementById('img3');
 
-  img1.src = recommendedRestaurant[0].imagePath;
-  img2.src = recommendedRestaurant[1].imagePath;
-  img3.src = recommendedRestaurant[2].imagePath;
+  //img1.src = recommendedRestaurant[0].imagePath;
+  //img2.src = recommendedRestaurant[1].imagePath;
+  //img3.src = recommendedRestaurant[2].imagePath;
 }
 
 displayRecommendedRestaurants();
@@ -99,12 +105,15 @@ function handleClick(event){
   if(selectedImageId === 'img1'){
     selectedCategory = 'asian';
   }
+
   if(selectedImageId === 'img2'){
     selectedCategory = 'Italian';
   }
+
   if (selectedImageId === 'img3'){
     selectedCategory = 'mexican';
   }
+
   displayPriceRangeImages();
 
   if (selectedImageId === 'img1'){
