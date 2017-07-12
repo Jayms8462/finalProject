@@ -56,6 +56,7 @@ function getRestaurant(category, priceRange){
       result.push(restaurants[i]);
     }
     return result;
+  }
 }
 
 ///test getRestaurant function
@@ -78,9 +79,9 @@ function displayRecommendedRestaurants(){
 //var img2 = document.getElementById('img2');
 //var img3 = document.getElementById('img3');
 
-  img1.src = recommendedRestaurant[0].imagePath;
-  img2.src = recommendedRestaurant[1].imagePath;
-  img3.src = recommendedRestaurant[2].imagePath;
+  //img1.src = recommendedRestaurant[0].imagePath;
+  //img2.src = recommendedRestaurant[1].imagePath;
+  //img3.src = recommendedRestaurant[2].imagePath;
 }
 
 displayRecommendedRestaurants();
