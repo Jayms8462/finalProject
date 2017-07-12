@@ -77,16 +77,16 @@ function displayRecommendedRestaurants(){
   var recommendedRestaurant = getRestaurant('asian', '$$$');
   console.log(recommendedRestaurant);
 
-//var img1 = document.getElementById('img1');
-//var img2 = document.getElementById('img2');
-//var img3 = document.getElementById('img3');
+  var img1 = document.getElementById('img1');
+  var img2 = document.getElementById('img2');
+  var img3 = document.getElementById('img3');
 
-  //img1.src = recommendedRestaurant[0].imagePath;
-  //img2.src = recommendedRestaurant[1].imagePath;
-  //img3.src = recommendedRestaurant[2].imagePath;
+  img1.src = recommendedRestaurant[0].imagePath;
+  img2.src = recommendedRestaurant[1].imagePath;
+  img3.src = recommendedRestaurant[2].imagePath;
 }
 
-displayRecommendedRestaurants();
+//displayRecommendedRestaurants();
 
 img1.addEventListener('click', handleClick, false);
 img2.addEventListener('click', handleClick, false);
@@ -96,12 +96,14 @@ img3.addEventListener('click', handleClick, false);
 
 var selectedCategory;
 var selectedPriceRange;
+var click = [];
 
 //still working on the handleClick function
 function handleClick(event){
+  click++;
   var selectedImageId = event.target.id;
   console.log('selectedImageId is: ' + selectedImageId);
-
+if (click === 1){
   if(selectedImageId === 'img1'){
     selectedCategory = 'asian';
   }
@@ -113,9 +115,9 @@ function handleClick(event){
   if (selectedImageId === 'img3'){
     selectedCategory = 'mexican';
   }
-
+}
   displayPriceRangeImages();
-
+if (click === 2){
   if (selectedImageId === 'img1'){
     selectedPriceRange = '$';
   }
@@ -127,8 +129,8 @@ function handleClick(event){
   if (selectedImageId === 'img3'){
     selectedPriceRange = '$$$';
   }
-
-  displayRecommendedRestaurants();
+}
+  //displayRecommendedRestaurants();
 
 
   console.log('The selected category is: ' + selectedCategory);
