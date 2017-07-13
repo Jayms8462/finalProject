@@ -79,6 +79,7 @@ h3{
   left: 0px;
   display: block;
   background-color: #040303;
+<<<<<<< HEAD
   margin-top: 30px;
 }
 .footCopyright {
@@ -90,6 +91,7 @@ h3{
   background-color: #5D9CEC;
   margin: 0 0 0 0;
   overflow: hidden;
+  margin-bottom: 120px;
 }
 #img-cont {
   margin-top: 100px;
@@ -156,10 +158,15 @@ h3{
 	top:1px;
 }
 
-//AboutUs CSS
 .block {
   height: 300px;
   width:100%;
+}
+
+.mainBody section {
+  background-color:white;
+  height:300px;
+  width: 100%;
 }
 
 #aboutUsImg1 {
@@ -198,4 +205,8 @@ hr {
   -webkit-margin-end: auto;
   border-style: inset;
   border-width: 1px;
+}
+/*Trip Planner CSS*/
+#map {
+  height: 60%;
 }

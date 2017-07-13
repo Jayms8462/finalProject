@@ -42,7 +42,7 @@ h3{
 }
 .mainBody {
   width: auto;
-  height: 700px;
+  height: auto;
   margin-top: 160px;
   margin-left: 100px;
   margin-right: 100px;
@@ -81,6 +81,8 @@ h3{
   background-color: #5D9CEC;
   margin: 0 0 0 0;
   overflow: hidden;
+  background-color: #040303;
+  margin-bottom: 120px;
 }
 #img-cont {
   margin-top: 40px;
@@ -109,9 +111,11 @@ h3{
   border-radius: 20px;
   border: 1px solid black;
 }
-#results {
 
+#restaurant{
+  font-weight: bold;
 }
+
 #generated-list {
   width: 50%;
   height: 400px;
