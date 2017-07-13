@@ -169,8 +169,18 @@ function printRestaurantInfo(selectedRestaurant){
     ulEl.textContent= '';
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'The restaurant you selected: ' + selectedRestaurant.name;
+    liEl.textContent = 'The restaurant you selected: ';
     ulEl.appendChild(liEl);
+
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.name;
+    //var el = document.getElementById('id' + id);
+    strongEl.style.fontFamily = 'serif';
+    //spanEl.style.fontWeight = '700';
+
+    //strongEl.setAttribute('id', 'restaurant');
+    liEl.appendChild(strongEl);
+
 
     var liEl = document.createElement('li');
     liEl.textContent = 'Selected category: ' + selectedRestaurant.category;
@@ -192,8 +202,9 @@ function printRestaurantInfo(selectedRestaurant){
     liEl.textContent = 'Hours: ' + selectedRestaurant.hours;
     ulEl.appendChild(liEl);
 
-    var liEl = document.createElement('li');
-    liEl.textContent = 'Link: ' + selectedRestaurant.link;
-    ulEl.appendChild(liEl);
+    var linkEl = document.createElement('a');
+    linkEl.setAttribute('href', selectedRestaurant.link)
+    linkEl.textContent = 'Link: ' + selectedRestaurant.link;
+    ulEl.appendChild(linkEl);
 
 }
