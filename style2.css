@@ -101,6 +101,11 @@ h3{
   border-radius: 20px;
   border: 1px solid black;
 }
+
+#restaurant{
+  font-weight: bold;
+}
+
 #generated-list {
   width: 50%;
   height: 400px;

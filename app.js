@@ -22,10 +22,10 @@ var wedgwood = new Restaurant ('asian', 'Wedgwood Vegetarian Thai', '$$', '420 B
 var roti = new Restaurant ('asian', 'Roti Indian Cuisine', '$$', '530 Queen Anne Ave N, Seattle, WA 98109', '(206) 216-7684', '11:30AM to 9:45PM', 'https://www.yelp.com/biz/roti-indian-cuisine-seattle', './images/asian/roti.jpg');
 var harbor = new Restaurant ('asian', 'Harbor City Restaurant', '$$$', '707 S King St., Seattle, WA 98104', '(206) 621-2228', '8:30AM to 11:00PM', 'https://www.yelp.com/biz/harbor-city-restaurant-seattle', './images/asian/harborCity.jpg');
 var sevenBeef = new Restaurant ('asian', 'Seven Beef', '$$$', '1305 E Jefferson St., Seattle WA 98122', '(206) 328-7090', '5:00PM to 10:00PM', 'https://www.yelp.com/biz/seven-beef-seattle', './images/asian/asianSevenBeef.jpg');
-var shiros = new Restaurant ('asian', 'Shiro\'s', '$$$', '2401 2nd Ave, Seattle WA 98121', '(206) 443-9844', '5:30PM to 10:30PM', 'https://www.yelp.com/biz/shiros-seattle', './images/asian/harborCity.jpg');
+var shiros = new Restaurant ('asian', 'Shiro\'s', '$$$', '2401 2nd Ave, Seattle WA 98121', '(206) 443-9844', '5:30PM to 10:30PM', 'https://www.yelp.com/biz/shiros-seattle', './images/asian/shiros.jpg');
 //Mexican Restaurants
-var tacosC = new Restaurant ('mexican', 'Tacos Chukis', '$', '219 Broadway E Seattle, WA 98102', '(206) 328-4447', '11:00AM to 10:00pm', 'https://www.yelp.com/biz/tacos-chukis-seattle', './images/mexican/TacoChuk.jpg');
-var elCam = new Restaurant ('mexican', 'El Camión', '$', '6416 15th Ave NW Seattle, WA 98107 at 64th St Ballard', '(206) 784-5411', '9:30AM to 10:00pm', 'https://www.yelp.com/biz/el-cami%C3%B3n-seattle-7', './images/mexican/ElCamion.jpg');
+var tacosC = new Restaurant ('mexican', 'Tacos Chukis', '$', '219 Broadway E Seattle, WA 98102', '(206) 328-4447', '11:00AM to 10:00PM', 'https://www.yelp.com/biz/tacos-chukis-seattle', './images/mexican/TacoChuk.jpg');
+var elCam = new Restaurant ('mexican', 'El Camión', '$', '6416 15th Ave NW Seattle, WA 98107 at 64th St Ballard', '(206) 784-5411', '9:30AM to 10:00PM', 'https://www.yelp.com/biz/el-cami%C3%B3n-seattle-7', './images/mexican/ElCamion.jpg');
 var tacosEl = new Restaurant ('mexican', 'Tacos El Asadero', '$', '3517 Rainier Ave S Seattle, WA 98118 Columbia City, Mount Baker', '(206) 722-9977', '10:00AM to 10:00PM', 'https://www.yelp.com/biz/tacos-el-asadero-seattle-2', './images/mexican/tacos.jpg');
 var fogon = new Restaurant ('mexican', 'Fogón Cocina Mexicana', '$$', '600 E Pine St Seattle, WA 98122 b/t Boylston Ave & Belmont Ave  Capitol Hill', '(206) 320-7777', '11:00AM to 11:00PM', 'https://www.yelp.com/biz/fog%C3%B3n-cocina-mexicana-seattle-2', './images/mexican/Fogon.jpg');
 var villaEs = new Restaurant ('mexican', 'Villa Escondida', '$$', '2203 1st Ave Seattle, WA 98121 b/t Bell St & Blanchard St  Belltown', '(206) 448-2393', '11:00AM to 10:00PM', 'https://www.yelp.com/biz/villa-escondida-seattle-3', './images/mexican/Villa.jpg');
@@ -38,7 +38,7 @@ var taqueria = new Restaurant ('mexican', 'Taqueria Cantina', '$$$', '2630 1st A
 var moLuPasta = new Restaurant ('Italian','Mo & Lu Pasta','$','12518 Lake City Way NE, Seattle, WA 98125','(206) 362-1396','4:00PM-10:00PM', 'https://www.yelp.com/biz/ristorante-doria-seattle', './images/italian/molupasta.jpg');
 var bizzarro = new Restaurant ('Italian','Bizzarro Italian Cafe','$','1307 N 46th St, Seattle, WA 98103','(206) 632-7277','5:00PM-10:00PM', 'https://www.yelp.com/biz/bizzarro-italian-caf%C3%A9-seattle-2', './images/italian/bizzarro.jpg');
 var loPriore = new Restaurant ('Italian','LoPriore Brothers Pasta Bar','$','1530 Post Alley, Seattle, WA 98101','(206) 621-7545','10:00AM-5:00PM', 'https://www.yelp.com/biz/lopriore-brothers-pasta-bar-seattle', './images/italian/lopriore.jpg');
-var salvatoreRistorante = new Restaurant ('Italian','Salvatore Ristorante Italiano','$$','6100 Roosevelt Way NE, Seattle, WA 98105','(206)527-9301','5:00PM-10:00PM', 'Salvatore Ristorante Italiano', './images/italian/salvatore.jpg');
+var salvatoreRistorante = new Restaurant ('Italian','Salvatore Ristorante Italiano','$$','6100 Roosevelt Way NE, Seattle, WA 98105','(206)527-9301','5:00PM-10:00PM', 'https://www.yelp.com/biz/salvatore-ristorante-seattle', './images/italian/salvatore.jpg');
 var mammaMelina = new Restaurant ('Italian','Mamma Melina Ristorante & Pizzeria','$$','5101 25th Ave NE, Seattle, WA 98105','(206) 632-2271','11:00AM-11:00PM', 'https://www.yelp.com/biz/mamma-melina-ristorante-pizzeria-seattle?osq=Mamma+Melina+Ristorante+%26+Pizzeria', './images/italian/mammaMelina.jpg');
 var buca = new Restaurant ('Italian','Buca di Beppo','$$','701 9th Ave N, Seattle, WA 98109','(206) 244-2288','11:00AM-11:00PM', 'https://www.yelp.com/biz/buca-di-beppo-lynnwood-4', './images/italian/buca.jpg');
 var tavolata = new Restaurant ('Italian','Tavolata','$$$','2323 2nd Ave, Seattle, WA 98121','(206) 838-8008','5:00PM-11:00PM', 'https://www.yelp.com/biz/tavolata-seattle', './images/italian/Tavolata.jpg');
@@ -169,31 +169,63 @@ function printRestaurantInfo(selectedRestaurant){
     ulEl.textContent= '';
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'The restaurant you selected: ' + selectedRestaurant.name;
+    liEl.textContent = 'The restaurant you selected: ';
     ulEl.appendChild(liEl);
 
-    var liEl = document.createElement('li');
-    liEl.textContent = 'Selected category: ' + selectedRestaurant.category;
-    ulEl.appendChild(liEl);
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.name;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
+
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'Price range: ' + selectedRestaurant.priceRange;
+    liEl.textContent = 'Selected category: ';
     ulEl.appendChild(liEl);
 
-    var liEl = document.createElement('li');
-    liEl.textContent = 'Address: ' + selectedRestaurant.address;
-    ulEl.appendChild(liEl);
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.category;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'Phone number: ' + selectedRestaurant.phoneNumber;
+    liEl.textContent = 'Price range: ';
     ulEl.appendChild(liEl);
 
-    var liEl = document.createElement('li');
-    liEl.textContent = 'Hours: ' + selectedRestaurant.hours;
-    ulEl.appendChild(liEl);
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.priceRange;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'Link: ' + selectedRestaurant.link;
+    liEl.textContent = 'Address: ';
     ulEl.appendChild(liEl);
+
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.address;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
+
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Phone number: ';
+    ulEl.appendChild(liEl);
+
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.phoneNumber;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
+
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Hours: ';
+    ulEl.appendChild(liEl);
+
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.hours;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
+
+    var linkEl = document.createElement('a');
+    linkEl.setAttribute('href', selectedRestaurant.link)
+    linkEl.textContent = 'Link: ' + selectedRestaurant.link;
+    ulEl.appendChild(linkEl);
 
 }
