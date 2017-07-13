@@ -186,7 +186,9 @@ h3{
 #blockOne, #blockTwo {
   padding-top: 20px;
 }
-
+#profileText img {
+  float: right;
+}
 hr {
   display: block;
   -webkit-margin-before: 0.5em;
