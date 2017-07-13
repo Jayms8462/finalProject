@@ -28,7 +28,7 @@ h3{
   height: 50px;
   position: absolute;
   left: 0px;
-  top: 120px;
+  top: 90px;
   display: block;
   background-color: #040303;
   text-align: center;
@@ -70,7 +70,7 @@ h3{
   position: absolute;
   left: 0px;
   display: block;
-  background-color: #040303;
+  background-color: black;
 }
 .footCopyright {
   width: 100%;
@@ -100,7 +100,6 @@ h3{
 #img2 {
   width: 30%;
   height: 300px;
-  margin-left:;
   border-radius: 20px;
   border: 1px solid black;
 }
