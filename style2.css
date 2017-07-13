@@ -78,10 +78,9 @@ h3{
   position: absolute;
   left: 0px;
   top: 860px;
-  background-color: #5D9CEC;
+  background-color:none;
   margin: 0 0 0 0;
   overflow: hidden;
-  background-color: #040303;
   margin-bottom: 120px;
 }
 #img-cont {
