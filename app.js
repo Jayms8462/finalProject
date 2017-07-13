@@ -174,33 +174,54 @@ function printRestaurantInfo(selectedRestaurant){
 
     var strongEl = document.createElement('strong');
     strongEl.textContent = selectedRestaurant.name;
-    //var el = document.getElementById('id' + id);
-    strongEl.style.fontFamily = 'serif';
-    //spanEl.style.fontWeight = '700';
-
-    //strongEl.setAttribute('id', 'restaurant');
+    strongEl.style.fontFamily = 'Arial';
     liEl.appendChild(strongEl);
 
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'Selected category: ' + selectedRestaurant.category;
+    liEl.textContent = 'Selected category: ';
     ulEl.appendChild(liEl);
 
-    var liEl = document.createElement('li');
-    liEl.textContent = 'Price range: ' + selectedRestaurant.priceRange;
-    ulEl.appendChild(liEl);
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.category;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'Address: ' + selectedRestaurant.address;
+    liEl.textContent = 'Price range: ';
     ulEl.appendChild(liEl);
 
-    var liEl = document.createElement('li');
-    liEl.textContent = 'Phone number: ' + selectedRestaurant.phoneNumber;
-    ulEl.appendChild(liEl);
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.priceRange;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'Hours: ' + selectedRestaurant.hours;
+    liEl.textContent = 'Address: ';
     ulEl.appendChild(liEl);
+
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.address;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
+
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Phone number: ';
+    ulEl.appendChild(liEl);
+
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.phoneNumber;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
+
+    var liEl = document.createElement('li');
+    liEl.textContent = 'Hours: ';
+    ulEl.appendChild(liEl);
+
+    var strongEl = document.createElement('strong');
+    strongEl.textContent = selectedRestaurant.hours;
+    strongEl.style.fontFamily = 'Arial';
+    liEl.appendChild(strongEl);
 
     var linkEl = document.createElement('a');
     linkEl.setAttribute('href', selectedRestaurant.link)
