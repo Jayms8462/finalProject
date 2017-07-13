@@ -169,11 +169,11 @@ function printRestaurantInfo(selectedRestaurant){
     ulEl.textContent= '';
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'The restaurant you selected: ' + selectedRestaurant.name;
+    liEl.textContent = 'Restaurant: ' + selectedRestaurant.name;
     ulEl.appendChild(liEl);
 
     var liEl = document.createElement('li');
-    liEl.textContent = 'Selected category: ' + selectedRestaurant.category;
+    liEl.textContent = 'Category: ' + selectedRestaurant.category;
     ulEl.appendChild(liEl);
 
     var liEl = document.createElement('li');

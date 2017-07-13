@@ -13,20 +13,21 @@ body {
   text-align: center;
 }
 .topBar i {
-  color:white;
+  color: white;
   margin-top: 10px;
 }
 h1{
   font-family: 'Quicksand', sans-serif;
   font-size: 36px;
   text-align: center;
-  color:white;
+  color: white;
 }
 h2{
   font-size: 28px;
 }
 h3{
   font: 26px;
+  margin-top:50px;
 }
 .navbar {
   width: 100%;
@@ -34,7 +35,6 @@ h3{
   position: absolute;
   left: 0px;
   top: 90px;
-  display: block;
   background-color: #040303;
   text-align: center;
 }
@@ -44,8 +44,6 @@ h3{
   margin: 0px 20px 0px 20px;
   font-family: 'Quicksand', ans-serif;
   font-size: 20px;
-  top: 12.5px;
-  bottom: 12.5px;
 }
 .mainBody {
   width: auto;
@@ -68,16 +66,15 @@ h3{
   padding: 5px;
   margin: auto;
 }
-.mainBody img {
-  background-color:#5D9CEC;
-}
 .footBar {
   width: 100%;
   height: 50px;
   position: absolute;
+  margin-top: 20px;
   left: 0px;
   display: block;
   background-color: #040303;
+  margin-top: 30px;
 }
 .footCopyright {
   width: 100%;
@@ -88,33 +85,7 @@ h3{
   background-color: #5D9CEC;
   margin: 0 0 0 0;
   overflow: hidden;
-}
-#img-cont {
-  margin-top: 100px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-#img1 {
-  float: left;
-  width: 30%;
-  height: 300px;
-  border-radius: 20px;
-  border: 1px solid black;
-}
-#img2 {
-  float: left;
-  width: 30%;
-  height: 300px;
-  margin-left: 5%;
-  border-radius: 20px;
-  border: 1px solid black;
-}
-#img3 {
-  float: right;
-  width: 30%;
-  height: 300px;
-  border-radius: 20px;
-  border: 1px solid black;
+  margin-bottom: 120px;
 }
 
 /*Play now button*/
@@ -153,14 +124,16 @@ h3{
 	position:relative;
 	top:1px;
 }
-
-//AboutUs CSS
+.block {
+  height: 300px;
+  width:100%;
+}
 .mainBody section {
   background-color:white;
   height:300px;
   width: 100%;
 }
-
+/*AboutUs CSS*/
 #aboutUsImg1 {
   display: block;
   float: left;
@@ -182,11 +155,12 @@ h3{
   margin-top: 0;
   margin-bottom: 0;
 }
-
 #blockOne, #blockTwo {
   padding-top: 20px;
 }
-
+#profileText img {
+  float: right;
+}
 hr {
   display: block;
   -webkit-margin-before: 0.5em;
@@ -195,4 +169,8 @@ hr {
   -webkit-margin-end: auto;
   border-style: inset;
   border-width: 1px;
+}
+/*Trip Planner CSS*/
+#map {
+  height: 60%;
 }

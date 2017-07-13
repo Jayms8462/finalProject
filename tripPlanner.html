@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="trip.js"></script>
+</head>
+<body>
+  <div class="topBar">
+    <i class="fa fa-cutlery fa-4x" aria-hidden="true"></i>
+    <h1></h1>
+  </div>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="game.html">Game</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="tripPlanner.html">Trip Planner</a>
+  </div>
+  <div class="mainBody">
+    <p><strong>Directions to locations<strong></p>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1Fpj8x0Ma14tuhDE6qYemb-gAzms" width="640" height="480"></iframe>
+    <div id="form">
+      <div class="title">
+        <p>Feedback</p>
+      </div>
+      <div id="name">
+        <p>Name:</p>
+        <input id="userName" type="text" name="name">
+      </div>
+      <div id="rester">
+        <p>Category:</p>
+        <select id="restaurants" name="Restaurants">
+          <option value="" selected="selected"></option>
+          <option value="1">Asian Restaurants</option>
+          <option value="2">Mexican Restaurants</option>
+          <option value="3">Italian Restaurants</option>
+        </select>
+        <button id="restSel" type="button" name="button">Submit Category</button>
+      </div>
+      <div id="asian">
+        <p>Asian Restaurants</p>
+        <select class="asianRest" name="Restaurants">
+          <option value="" selected="selected"></option>
+          <option value="1">Thanh Son Tofu</option>
+          <option value="2">A Piece Of Cake</option>
+          <option value="3">Moon Light Cafe</option>
+          <option value="4">Bamboo Garden Vegetarian</option>
+          <option value="5">Wedgwood Vegetarian Thai</option>
+          <option value="6">Roti Indian Cuisine</option>
+          <option value="7">Harbor City Restaurant</option>
+          <option value="8">Seven Beef</option>
+          <option value="9">Shiro's</option>
+        </select>
+      </div>
+      <div id="mexican">
+        <p>Mexican Restaurants</p>
+        <select class="mexRest" name="Restaurants">
+          <option value="" selected="selected"></option>
+          <option value="1">Tacos Chukis</option>
+          <option value="2">El Camión</option>
+          <option value="3">Tacos El Asadero</option>
+          <option value="4">Fogón Cocina Mexicana</option>
+          <option value="5">Villa Escondida</option>
+          <option value="6">El Legendario Mexican Restaurant</option>
+          <option value="7">La Antigua Casa Maria</option>
+          <option value="8">Zocálo</option>
+          <option value="9">Taqueria Cantina</option>
+        </select>
+      </div>
+      <div id="italian">
+        <p>Italian Restaurants</p>
+        <select class="italRest" name="Restaurants">
+          <option value="" selected="selected"></option>
+          <option value="1">Mo & Lu Pasta</option>
+          <option value="2">Bizzarro Italian Cafe</option>
+          <option value="3">LoPriore Brothers Pasta Bar</option>
+          <option value="4">Salvatore Ristorante Italiano</option>
+          <option value="5">Mamma Melina Ristorante & Pizzeria</option>
+          <option value="6">Buca di Beppo</option>
+          <option value="7">Tavolata</option>
+          <option value="8">Ristroante Doria</option>
+          <option value="9">Spinasse</option>
+        </select>
+      </div>
+      <div class="feedback">
+        <p>Feedback:</p>
+        <textarea name="feedback" rows="8" cols="80"></textarea>
+      </div>
+      <button id="button" type="button" name="button">Submit</button>
+    </div>
+  </div>
+  <div class="footBar">
+
+  </div>
+  <script src="trip.js"></script>
+</body>
+<footer></footer>
