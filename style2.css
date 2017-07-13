@@ -17,12 +17,6 @@ h1{
   text-align: center;
   color:white;
 }
-h2{
-  font-size: 28px;
-}
-h3{
-  font: 26px;
-}
 .navbar {
   width: 100%;
   height: 50px;
@@ -56,18 +50,11 @@ h3{
   border-radius: 25px;
   box-shadow:0 0 15px #040303;
 }
-.mainBody li {
-  list-style: none;
-  padding: 5px;
-  margin: auto;
-}
-.mainBody img {
-  background-color:#5D9CEC;
-}
 .footBar {
   width: 100%;
   height: 50px;
   position: absolute;
+  margin-top: 20px;
   left: 0px;
   display: block;
   background-color: black;
@@ -89,14 +76,12 @@ h3{
   margin-right: 50px;
   padding: -50px;
   font-family: 'Quicksand', sans-serif;
-
 }
 #img1 {
   width: 30%;
   height: 300px;
   border-radius: 20px;
   border: 1px solid black;
-  border-radius: 25px;
 }
 #img2 {
   width: 30%;
@@ -115,9 +100,11 @@ h3{
   font-weight: bold;
 }
 
+
 #generated-list {
+  list-style: none;
   width: 50%;
-  height: 400px;
+  height: 200px;
   color: black;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
@@ -126,4 +113,7 @@ h3{
   margin: auto;
   margin-top:20px;
   font-weight: bold;
+}
+#generated-list li {
+  padding: 5px;
 }
