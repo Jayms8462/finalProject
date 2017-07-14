@@ -75,18 +75,9 @@ h3{
   display: block;
   background-color: #040303;
   margin-top: 30px;
+  margin-bottom: 120px;-
 }
-.footCopyright {
-  width: 100%;
-  height: 120px;
-  position: absolute;
-  left: 0px;
-  top: 960px;
-  background-color: #5D9CEC;
-  margin: 0 0 0 0;
-  overflow: hidden;
-  margin-bottom: 120px;
-}
+
 
 /*Play now button*/
 .myButton {

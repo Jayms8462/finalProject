@@ -1,4 +1,4 @@
-document.getElementById("restSel").addEventListener("click", sohEl);
+document.getElementById("restaurants").addEventListener("click", sohEl);
 var asianEl = document.getElementById("asian");
 var mexEl = document.getElementById("mexican");
 var italEl = document.getElementById("italian");
