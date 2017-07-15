@@ -47,7 +47,7 @@ var spinasse = new Restaurant ('Italian','Spinasse','$$$','1531 14th Ave, Seattl
 
 var restaurants;
 
-restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, moLuPasta, bizzarro, loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, doria, spinasse, tacosC, elCam, tacosEl, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
+restaurants = [thanhSonTofu, aPieceOfCake, moonLight, bambooGarden, wedgwood, roti, harbor, sevenBeef, shiros, doria, moLuPasta, bizzarro, loPriore, salvatoreRistorante, mammaMelina, buca, tavolata, spinasse, tacosC, elCam, tacosEl, fogon, villaEs, elLegend, laAnt, zocalo, taqueria];
 
 
 function getRestaurant(category, priceRange){
@@ -192,7 +192,8 @@ function printRestaurantInfo(selectedRestaurant){
     liEl.textContent = 'Hours: ' + selectedRestaurant.hours;
     ulEl.appendChild(liEl);
 
-    var liEl = document.createElement('li');
+    var linkEl = document.createElement('a');
+    linkEl.setAttribute('href', selectedRestaurant.link);
     liEl.textContent = 'Link: ' + selectedRestaurant.link;
     ulEl.appendChild(liEl);
 
