@@ -153,7 +153,12 @@ h2{
 	position:relative;
 	top:1px;
 }
+
 #generated-list li {
   padding: 5px;
   font-size: 18px;
+}
+
+#generated-list li {
+  padding: 5px;
 }
