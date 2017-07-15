@@ -195,5 +195,4 @@ function printRestaurantInfo(selectedRestaurant){
     var liEl = document.createElement('li');
     liEl.textContent = 'Link: ' + selectedRestaurant.link;
     ulEl.appendChild(liEl);
-
 }
